@@ -1,11 +1,8 @@
 logs/*.log
 logs/*.cache
 *.log
-npm-debug.log*
-pids
-*.pid
-*.seed
-*.pid.lock
+yarn-debug.log*
+yarn-error.log*
 lib-cov
 coverage
 .nyc_output

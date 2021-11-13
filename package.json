@@ -1,0 +1,19 @@
+{
+  "name": "psycryptbot",
+  "version": "1.0.0",
+  "description": "We see the moon, we steal the moon",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Corban Amouzou, Hunter Ummels",
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "eslint-config-google": "^0.14.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "minimist": "^1.2.5",
+    "mongodb": "^4.1.4"
+  }
+}

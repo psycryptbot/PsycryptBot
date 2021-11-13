@@ -17,5 +17,3 @@ typings/
 *.tgz
 .env
 .cache
-.vscode
-#.database/*/

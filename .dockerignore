@@ -21,4 +21,3 @@ typings/
 .env
 .cache
 .database/*
-.git

@@ -2,7 +2,7 @@
   "name": "psycryptbot",
   "version": "1.0.0",
   "description": "We see the moon, we steal the moon",
-  "main": "main.js",
+  "main": "startup",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,8 +12,13 @@
     "eslint-config-google": "^0.14.0"
   },
   "dependencies": {
+    "events": "^3.3.0",
+    "fs": "^0.0.1-security",
+    "klaw": "^4.0.1",
     "lodash": "^4.17.21",
     "minimist": "^1.2.5",
-    "mongodb": "^4.1.4"
+    "mongodb": "^4.1.4",
+    "path": "^0.12.7",
+    "semver": "^7.3.5"
   }
 }

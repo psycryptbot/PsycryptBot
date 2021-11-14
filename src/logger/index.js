@@ -25,6 +25,8 @@ class Logger {
    */
   constructor(name) {
     this.name = name;
+    this.children = [];
+    this.parent = null;
   }
   /**
    * Normal Logging
@@ -73,6 +75,35 @@ class Logger {
    */
   createSubProcess(subName) {
     return new Logger(this.name + ' ' + subName);
+  }
+
+  /**
+   * Takes the current logger and associates it with a parent
+   *
+   * @param {Logger} parent
+   *    The parent to become a child of.
+   * @memberof Logger
+   */
+  becomeSubProcess(parent) {
+    if (this.parent == null) {
+      this.parent = parent;
+      this.name = `${subname} > ${this.name}`;
+    } else {
+      this.error(`Tried to associate with a parent while already having one`);
+    }
+  }
+
+  /**
+   * Changes the current parent to the provided one
+   *
+   * @param {Logger} parent
+   * @memberof Logger
+   */
+  attachToNewParent(parent) {
+    this.parent = parent;
+    const splitName = this.name.split(' ');
+    splitName[splitName.length == 2 ? 0 : splitName.length - 3] = parent.name;
+    this.name = splitName.join(' ');
   }
 }
 

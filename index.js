@@ -7,9 +7,10 @@
 // All rights reserved.
 //
 
+const path = require('path');
 const semver = require('semver');
 if (semver.gt('14.15.0', process.versions.node)) {
   console.error('[ERROR] node version lower than 14.15.0');
   exit(1);
 }
-new (require('../src/Psycrypt'))();
+new (require(path.join(__dirname, 'src/Psycrypt')))();

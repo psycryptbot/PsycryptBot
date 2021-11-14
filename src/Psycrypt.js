@@ -8,13 +8,13 @@
 //
 
 const minimalist = require('minimist');
-const version = require('../../package.json').version;
+const version = require('../package.json').version;
 const fs = require('fs');
 // const klaw = require('klaw');
 const EventEmitter = require('events');
-const Logger = require('../logger');
+const Logger = require('./Logger');
 const path = require('path');
-const rootPath = path.join(__dirname, '../../');
+const rootPath = path.join(__dirname, '../');
 
 /**
  * Main state of the entire bot
@@ -50,7 +50,7 @@ class Psycrypt extends Logger {
    */
   ensureConfig() {
     const configDir = path.join(rootPath, 'config.js');
-    const setupDir = path.join(rootPath, 'startup/scripts/setup');
+    const setupDir = path.join(rootPath, 'dev/setup');
     if (fs.existsSync(configDir) && this.config == {}) {
       this.config = require(configDir);
     } else {
@@ -70,7 +70,7 @@ class Psycrypt extends Logger {
     const commandPath = path.join(rootPath, 'commands');
     const commands = fs.readdirSync(commandPath);
     for (const command of commands) {
-      if (commandName == 'baseCommand') {
+      if (command == 'baseCommand') {
         continue;
       }
       this.loadCommand(command);

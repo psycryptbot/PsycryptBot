@@ -53,6 +53,15 @@ class BaseCommand extends Logger {
     this.location = location;
     this.events = new EventEmitter();
   }
+
+  /**
+   * Emits 'shutdown' event.
+   *
+   * @memberof BaseCommand
+   */
+  shutdown() {
+    this.events.emit('shutdown');
+  }
 }
 
 module.exports = BaseCommand;

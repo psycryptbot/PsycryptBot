@@ -7,7 +7,9 @@
 // All rights reserved.
 //
 
-// const Psycrypt = require('../../src/Psycrypt');
+
+// eslint-disable-next-line no-unused-vars
+const Psycrypt = require('../src/Psycrypt');
 // TODO: Guided .env setup
 // TODO: Network .env setup
 /**

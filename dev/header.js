@@ -7,7 +7,7 @@
 // All rights reserved.
 //
 
-const Logger = require('../src/logger');
+const Logger = require('../src/Logger');
 const path = require('path');
 const fs = require('fs');
 const klaw = require('klaw');

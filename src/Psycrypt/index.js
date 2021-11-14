@@ -17,11 +17,13 @@ const path = require('path');
 
 /**
  * Main state of the entire bot
+ *
  * @class Psycrypt
  */
 class Psycrypt extends Logger {
   /**
    * Creates an instance of Psycrypt.
+   *
    * @param {Array} arguments
    * @memberof Psycrypt
    */
@@ -39,6 +41,7 @@ class Psycrypt extends Logger {
 
   /**
    * Makes sure that the config exists and calls a setup if not
+   *
    * @memberof Psycrypt
    */
   ensureConfig() {

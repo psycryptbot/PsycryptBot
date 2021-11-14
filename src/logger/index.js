@@ -19,6 +19,7 @@
 class Logger {
   /**
    * Creates an instance of Logger
+   *
    * @param {String} name
    * @memberof Logger
    */
@@ -27,6 +28,7 @@ class Logger {
   }
   /**
    * Normal Logging
+   *
    * @param {String} message
    * @memberof Logger
    */
@@ -35,6 +37,7 @@ class Logger {
   }
   /**
    * Warning logging
+   *
    * @param {String} message
    * @memberof Logger
    */
@@ -43,6 +46,7 @@ class Logger {
   }
   /**
    * Error logging
+   *
    * @param {String} message
    * @memberof Logger
    */
@@ -52,6 +56,7 @@ class Logger {
 
   /**
    * Debug logging
+   *
    * @param {String} message
    * @memberof Logger
    */
@@ -61,6 +66,7 @@ class Logger {
 
   /**
    * Creates a logger that operates as a subprocess of the current instance
+   *
    * @param {String} subName
    * @memberof Logger
    * @return {Logger}

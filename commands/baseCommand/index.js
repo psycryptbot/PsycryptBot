@@ -31,6 +31,8 @@ class BaseCommand extends Logger {
    * @param {Psycrypt} parent
    *    The parent that will be calling the command
    *    which in this case is the Psycrypt object.
+   * @param {String} location
+   *    The physical location of copmmand for require cache purposes
    * @memberof BaseCommand
    */
   constructor(
@@ -40,6 +42,7 @@ class BaseCommand extends Logger {
       requiresNetwork,
       requiresAPI,
       parent,
+      location,
   ) {
     super(name);
     this.description = description;
@@ -47,6 +50,7 @@ class BaseCommand extends Logger {
     this.requiresNetwork = requiresNetwork;
     this.requiresAPI = requiresAPI;
     this.parent = parent;
+    this.location = location;
     this.events = new EventEmitter();
   }
 }

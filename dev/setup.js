@@ -12,7 +12,6 @@
 const Psycrypt = require('../src/Psycrypt');
 // TODO: Guided .env setup
 // TODO: Network .env setup
-
 /**
  * @param {Psycrypt} psycrypt
  */

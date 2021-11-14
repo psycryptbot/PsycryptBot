@@ -8,7 +8,6 @@
 // All rights reserved.
 //
 
-
 const Logger = require('../src/Logger');
 const path = require('path');
 const fs = require('fs');

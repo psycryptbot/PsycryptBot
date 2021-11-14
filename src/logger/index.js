@@ -1,11 +1,15 @@
 //
 // PsycryptBot
-// Copyright (c) 2021. Corban Amouzou, Hunter Ummels.
+// -------------------------------------
+// | Copyright © 2021. Corban Amouzou  |
+// | Copyright © 2021. Hunter Ummels   |
+// -------------------------------------
+// All rights reserved.
 //
 
-// TODO: Make logger adopt coloring and stack tracing
-// TODO: Adopt log storing
-
+// TODO: Make logger upload logs
+// TODO: Log files/storage
+// TODO: Coloring.
 /**
  * Main logger class for entire bot.
  * Classes can extend from this
@@ -52,7 +56,7 @@ class Logger {
    * @memberof Logger
    */
   debug(message) {
-    console.log(`[${this.name}] Debug: ${this.message}`);
+    console.log(`[${this.name}] Debug: ${message}`);
   }
 
   /**

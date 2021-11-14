@@ -45,4 +45,4 @@ It's an infinite money glitch, and we're going to take it all the way!
 
 ### What technologies will we need to use to accomplish this
 
-To get this done, we'll need to utilize large amounts of physical machines to run as many instances of this as possible. For this repository, we'll use NodeJS with its accompanying packages. This will allow for a faster development speed to get this completed faster.
+To get this done, we'll need to utilize large amounts of physical machines to run as many instances of this as possible. For this repository, we'll use NodeJS with its accompanying packages, allowing a faster development speed overall.

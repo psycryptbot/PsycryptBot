@@ -15,6 +15,7 @@ const EventEmitter = require('events');
 const Logger = require('../logger');
 const path = require('path');
 const rootPath = path.join(__dirname, '../../');
+
 /**
  * Main state of the entire bot
  *
@@ -29,6 +30,7 @@ class Psycrypt extends Logger {
    */
   constructor() {
     super('Psycrypt');
+    this.log(`Starting!`);
     this.overwrites = {};
     this.config = {};
     this.commands = {};
@@ -68,13 +70,59 @@ class Psycrypt extends Logger {
     const commandPath = path.join(rootPath, 'commands');
     const commands = fs.readdirSync(commandPath);
     for (const command of commands) {
-      if (command == 'baseCommand') {
+      if (commandName == 'baseCommand') {
         continue;
       }
-      this.debug(`Loading command ${command}`);
-      const commandObj = new (require(path.join(commandPath, command)))(this);
-      this.commands[commandObj.name] = commandObj;
+      this.loadCommand(command);
     }
+  }
+
+  /**
+   * Reloads a command from the source. This allows for runtime
+   * modifications to command sources without having to completely
+   * restart the process.
+   *
+   * @param {String} commandName
+   * @memberof Psycrypt
+   */
+  reloadCommand(commandName) {
+    this.unloadCommand(commandName);
+    this.loadCommand(commandName);
+  }
+
+  /**
+   * Loads a command into this.commands
+   *
+   * @param {String} commandName
+   * @memberof Psycrypt
+   */
+  loadCommand(commandName) {
+    if (Object.keys(this.commands).includes(commandName)) {
+      this.warn(`Tried to load command ${commandName}, but it already exists`);
+      return;
+    }
+    this.debug(`Loading command ${commandName}`);
+    const location = path.join(commandPath, command);
+    const commandObj = new (require(location))(this, location);
+    this.commands[commandObj.name] = commandObj;
+  }
+
+  /**
+   * Removes a command from this.commands and require cache,
+   * completely unloading it from runtime.
+   *
+   * @param {String} commandName
+   * @memberof Psycrypt
+   */
+  unloadCommand(commandName) {
+    if (!Object.keys(this.commands).includes(commandName)) {
+      this.warn(`Tried to unload command ${commandName}, but it doesn't exist`);
+      return;
+    }
+    const command = this.commands[commandName];
+    const resolved = require.resolve(`${command.location}/${command.name}`);
+    delete require.cache[resolved];
+    delete this.commands[commandName];
   }
 }
 

@@ -13,4 +13,3 @@ if (semver.gt('14.15.0', process.versions.node)) {
   exit(1);
 }
 new (require('../src/Psycrypt'))();
-

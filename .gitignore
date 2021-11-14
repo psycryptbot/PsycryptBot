@@ -20,4 +20,5 @@ typings/
 *.tgz
 .env
 .cache
-.database/*
+.vscode
+#.database/*/

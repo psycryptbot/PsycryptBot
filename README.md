@@ -16,15 +16,16 @@ This is what we want to say in the future. For now, there is quite an amount of 
   - [x] Unload Command
   - [x] Reload Command
   - [ ] Dynamic Command Updating
+  - [ ] Add Essential Commands
 - [x] Setup Tools
   - [ ] Network Setup
     - [ ] Integrate with private network server
-  - [ ] Manual Setup
+  - [ ] Manual Setup - `Cero 1`
     - [ ] Create .env
 - [ ] Setup database
-- [ ] Implement Interactive mode
+- [ ] Implement Interactive mode - `Cero 2`
 - [ ] Implement Read-Execute-Exit (REE) CLI mode (Regular CLI only)
-- [ ] Implement Unified API entity for easy exchange interaction no matter the type
+- [ ] Implement Unified API Entity (UAE) for easy exchange interaction no matter the type
 - [ ] Create email service (Or use temp email services)
 - [ ] Add KYC-less echanges (preferably NPN, NF ones from [here](https://bitshills.com/best-non-kyc-crypto-exchanges/))
 
@@ -40,7 +41,7 @@ This is what we want to say in the future. For now, there is quite an amount of 
 
 - [ ] Start repeated scanning from multiple accounts for changes in the market
 - [ ] Implement rotating proxy within local networks
-- [ ] Work on actual arbitrage `// TODO: Write the todo for this loil`
+- [ ] Work on actual arbitrage `// TODO: Write the todo for this lol`
 - [ ] Implement Network Master mode
 - [ ] Implement Remote Updater
 

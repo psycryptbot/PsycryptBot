@@ -40,8 +40,9 @@ class Psycrypt extends Logger {
     this.events = new EventEmitter();
 
     // Check for config existance before anything
-    this.ensureConfig();
-    this.setupCommands();
+    this.ensureConfig().then(() => {
+      this.setupCommands();
+    });
   }
 
   /**
@@ -49,14 +50,14 @@ class Psycrypt extends Logger {
    *
    * @memberof Psycrypt
    */
-  ensureConfig() {
+  async ensureConfig() {
     const configDir = path.join(rootPath, 'config.js');
     const setupDir = path.join(rootPath, 'dev/setup');
     if (fs.existsSync(configDir) && this.config == {}) {
       this.config = require(configDir);
     } else {
       const setup = require(setupDir);
-      setup();
+      await setup(this);
     }
   }
 

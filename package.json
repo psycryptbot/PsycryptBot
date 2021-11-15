@@ -12,6 +12,7 @@
     "eslint-config-google": "^0.14.0"
   },
   "dependencies": {
+    "chalk": "^4.1.2",
     "enquirer": "^2.3.6",
     "events": "^3.3.0",
     "fs": "^0.0.1-security",

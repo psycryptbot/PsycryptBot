@@ -1,4 +1,12 @@
-
+//
+// PsycryptBot
+// -------------------------------------
+// | Copyright © 2021. Corban Amouzou  |
+// | Copyright © 2020. Jules Amalie    |
+// | Copyright © 2021. Hunter Ummels   |
+// -------------------------------------
+// All rights reserved.
+//
 const path = require('path');
 const rootPath = path.join(__dirname, '../../');
 const Logger = require(path.join(rootPath, 'src/logger'));

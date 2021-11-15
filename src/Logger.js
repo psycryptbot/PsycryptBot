@@ -2,6 +2,7 @@
 // PsycryptBot
 // -------------------------------------
 // | Copyright © 2021. Corban Amouzou  |
+// | Copyright © 2020. Jules Amalie    |
 // | Copyright © 2021. Hunter Ummels   |
 // -------------------------------------
 // All rights reserved.
@@ -9,7 +10,8 @@
 
 // TODO: Make logger upload logs
 // TODO: Log files/storage
-// TODO: Coloring.
+// TODO: Coloring. (possibly with chalk?)
+
 /**
  * Main logger class for entire bot.
  * Classes can extend from this
@@ -28,6 +30,7 @@ class Logger {
     this.children = [];
     this.parent = null;
   }
+
   /**
    * Normal Logging
    *
@@ -37,6 +40,7 @@ class Logger {
   log(message) {
     console.log(`[${this.name}] ${message}`);
   }
+
   /**
    * Warning logging
    *
@@ -46,6 +50,7 @@ class Logger {
   warn(message) {
     console.warn(`[${this.name}] Warning: ${message}`);
   }
+
   /**
    * Error logging
    *

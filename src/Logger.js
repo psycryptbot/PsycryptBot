@@ -8,6 +8,8 @@
 // All rights reserved.
 //
 
+const chalk = require('chalk');
+
 // TODO: Make logger upload logs
 // TODO: Log files/storage
 // TODO: Coloring. (possibly with chalk?)
@@ -38,7 +40,7 @@ class Logger {
    * @memberof Logger
    */
   log(message) {
-    console.log(`[${this.name}] ${message}`);
+    console.log(chalk.bold.white(`[${this.name}] ${message}`));
   }
 
   /**
@@ -48,7 +50,7 @@ class Logger {
    * @memberof Logger
    */
   warn(message) {
-    console.warn(`[${this.name}] Warning: ${message}`);
+    console.warn(chalk.bold.yellowBright(`[${this.name}] Warning: ${message}`));
   }
 
   /**
@@ -58,7 +60,7 @@ class Logger {
    * @memberof Logger
    */
   error(message) {
-    console.error(`[${this.name}] Error: ${message}`);
+    console.error(chalk.red(`[${this.name}] Error: ${message}`));
   }
 
   /**
@@ -68,7 +70,7 @@ class Logger {
    * @memberof Logger
    */
   debug(message) {
-    console.log(`[${this.name}] Debug: ${message}`);
+    console.log(chalk.yellow(`[${this.name}] Debug: ${message}`));
   }
 
   /**

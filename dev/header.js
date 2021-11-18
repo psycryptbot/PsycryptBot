@@ -30,7 +30,7 @@ klaw(basePath, {
     return;
   }
   if (path.extname(item.path) == '.js') {
-    const fileName = path.basename(item.path);
+    const fileName = path.relative(basePath, item.path);
     let fileString = fs.readFileSync(item.path, {
       encoding: 'utf-8',
     }).toString();

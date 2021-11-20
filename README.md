@@ -1,11 +1,43 @@
 <!-- markdownlint-disable MD001 MD023 MD026 -->
-# PsycriptBot
+# PsycriptBot To-Do
 
-> *A potential leader in crypto bots, it is the #1 go-to for autonomous trading.*
+## ❯ Arbitrage
 
-This is what we want to say in the future. For now, there is quite an amount of work ahead.
+We will be using [0x](https://0x.org/) as this will allow us to work with all the good DEX networks.
 
-### Todo
+Examples being:
+
+- Uniswap
+- Curve
+- Moonwap
+- etc...
+
+This also allows us to work networks other than the main-net such as Polygon.
+
+This means that we are going to be adding 0x integration to our todo list:
+
+- [ ] 0x Integration
+
+Second, we want to be able to call flash loans, so we want to be able to interact with liquidity pools such as the aave provider. For our purposes we'll want to be using AaveV2
+
+- [ ] AaveV2 Integration
+
+## ❯ Commands
+
+We already have the groundwork for our commands, but we want to actually start adding some. These can be used for testing purposes and for custom configurations on a single-use basis. There will be a couple commands that we should make from the get-go for CLI's sake. These are what follows:
+
+- [ ] `version`: Displays the version.
+- [ ] `config`: Gives an optional prompt to the user to manage their configuration.
+- [ ] `help`: Displays a list of commands to the user.
+- [ ] `deamon`: gives information about the deamon status. (same as `systemctl` in some ways)
+
+More to come...
+
+## ❯ Contracts 
+
+Basically all the functionality we need is going to be on the blockchain. This will allow us to cancel tranfers mid execution from within the chain instead of being locked into an exchange if it costs too much. This functionality can be anything from calling a flashloan or executing a tranfer on multiple exchanges.
+
+# TODO (OLD)
 
 <!-- markdownlint-disable-next-line -->
 **In no particular order**

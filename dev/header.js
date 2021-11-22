@@ -7,18 +7,7 @@
 // -------------------------------------
 // All rights reserved.
 //
-// SPDX-License-Identifier: UNLICENCED
-//
-// PsycryptBot
-// -------------------------------------
-// | Copyright © 2021. Corban Amouzou  |
-// | Copyright © 2021. Jules Amalie    |
-// | Copyright © 2021. Hunter Ummels   |
-// -------------------------------------
-// All rights reserved.
-//
-// All rights reserved.
-//
+
 
 const Logger = require('../src/Logger');
 const path = require('path');
@@ -80,6 +69,9 @@ logger.log(`Starting`);
 
 klaw(basePath, {
   depthLimit: Infinity,
+  filter: (path) => {
+    return !hitFilter(path);
+  }
 }).on('data', (item) => {
   if (path.extname(item.path) == '.js' || path.extname(item.path) == '.sol') {
     const fileName = path.basename(item.path);

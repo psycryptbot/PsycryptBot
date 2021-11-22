@@ -1,4 +1,3 @@
-// SPDX-License-Identifier: UNLICENCED
 //
 // PsycryptBot
 // -------------------------------------
@@ -8,35 +7,7 @@
 // -------------------------------------
 // All rights reserved.
 //
-// SPDX-License-Identifier: UNLICENCED
-// SPDX-License-Identifier: UNLICENCED
-// SPDX-License-Identifier: UNLICENCED
-// SPDX-License-Identifier: UNLICENCED
-//
-// PsycryptBot
-// -------------------------------------
-// | Copyright © 2021. Corban Amouzou  |
-// | Copyright © 2021. Jules Amalie    |
-// | Copyright © 2021. Hunter Ummels   |
-// -------------------------------------
-// All rights reserved.
-//
-// SPDX-License-Identifier: UNLICENCED
-// SPDX-License-Identifier: UNLICENCED
-// SPDX-License-Identifier: UNLICENCED
-// SPDX-License-Identifier: UNLICENCED
-// SPDX-License-Identifier: UNLICENCED
-//
-// PsycryptBot
-// -------------------------------------
-// | Copyright © 2021. Corban Amouzou  |
-// | Copyright © 2021. Jules Amalie    |
-// | Copyright © 2021. Hunter Ummels   |
-// -------------------------------------
-// All rights reserved.
-//
-// All rights reserved.
-//
+
 const path = require('path');
 const rootPath = path.join(__dirname, '../../');
 const Logger = require(path.join(rootPath, 'src/logger'));

@@ -7,43 +7,6 @@
 // -------------------------------------
 // All rights reserved.
 //
-// SPDX-License-Identifier: UNLICENCED
-//
-// PsycryptBot
-// -------------------------------------
-// | Copyright © 2021. Corban Amouzou  |
-// | Copyright © 2021. Jules Amalie    |
-// | Copyright © 2021. Hunter Ummels   |
-// -------------------------------------
-// All rights reserved.
-//
-// SPDX-License-Identifier: UNLICENCED
-// SPDX-License-Identifier: UNLICENCED
-// SPDX-License-Identifier: UNLICENCED
-//
-// PsycryptBot
-// -------------------------------------
-// | Copyright © 2021. Corban Amouzou  |
-// | Copyright © 2021. Jules Amalie    |
-// | Copyright © 2021. Hunter Ummels   |
-// -------------------------------------
-// All rights reserved.
-//
-// SPDX-License-Identifier: UNLICENCED
-// SPDX-License-Identifier: UNLICENCED
-// SPDX-License-Identifier: UNLICENCED
-// SPDX-License-Identifier: UNLICENCED
-//
-// PsycryptBot
-// -------------------------------------
-// | Copyright © 2021. Corban Amouzou  |
-// | Copyright © 2021. Jules Amalie    |
-// | Copyright © 2021. Hunter Ummels   |
-// -------------------------------------
-// All rights reserved.
-//
-// All rights reserved.
-//
 
 const minimalist = require('minimist');
 const {version} = require('../package.json');
@@ -111,7 +74,7 @@ class Psycrypt extends Logger {
       if (command == 'baseCommand') {
         continue;
       }
-      this.loadCommand(command);
+      this.loadCommand(commandPath, commandName);
     }
   }
 
@@ -131,10 +94,11 @@ class Psycrypt extends Logger {
   /**
    * Loads a command into this.commands
    *
+   * @param {String} commandPath
    * @param {String} commandName
    * @memberof Psycrypt
    */
-  loadCommand(commandName) {
+  loadCommand(commandPath, commandName) {
     if (Object.keys(this.commands).includes(commandName)) {
       this.warn(`Tried to load command ${commandName}, but it already exists`);
       return;

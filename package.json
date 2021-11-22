@@ -1,0 +1,30 @@
+{
+  "name": "psycryptbot",
+  "version": "1.0.0",
+  "description": "We see the moon, we steal the moon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Corban Amouzou, Hunter Ummels, Jules Amalie",
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "eslint-config-google": "^0.14.0"
+  },
+  "dependencies": {
+    "@aave/protocol-js": "^4.3.0",
+    "@openzeppelin/contracts": "^4.3.3",
+    "@uniswap/sdk-core": "^3.0.1",
+    "@uniswap/v3-sdk": "^3.3.2",
+    "chalk": "^4.1.2",
+    "enquirer": "^2.3.6",
+    "ethers": "^5.5.1",
+    "events": "^3.3.0",
+    "fs": "^0.0.1-security",
+    "klaw": "^4.0.1",
+    "lodash": "^4.17.21",
+    "minimist": "^1.2.5",
+    "path": "^0.12.7",
+    "semver": "^7.3.5"
+  }
+}

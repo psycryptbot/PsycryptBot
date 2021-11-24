@@ -8,21 +8,17 @@
 // -------------------------------------
 // All rights reserved.
 //
+
 pragma solidity >=0.4.22 <0.9.0;
 
-contract Migrations {
-    address public owner = msg.sender;
-    uint256 public last_completed_migration;
+import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";
 
-    modifier ownerOnly() {
-        require(
-          msg.sender == owner, 
-          "Message sender needs to be the owner of the contract"
-        );
-        _;
-    }
+contract Migrations is Ownable {
 
-    function setCompleted(uint256 completed) public ownerOnly {
-        last_completed_migration = completed;
-    }
+  uint256 public last_completed_migration;
+
+  function setCompleted(uint256 completed) public onlyOwner {
+      last_completed_migration = completed;
+  }
+
 }

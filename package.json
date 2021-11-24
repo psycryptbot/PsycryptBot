@@ -9,7 +9,9 @@
   "author": "Corban Amouzou, Hunter Ummels, Jules Amalie",
   "devDependencies": {
     "eslint": "^8.2.0",
-    "eslint-config-google": "^0.14.0"
+    "eslint-config-google": "^0.14.0",
+    "hardhat": "^2.6.8",
+    "prettier": "^2.4.1"
   },
   "dependencies": {
     "@aave/protocol-js": "^4.3.0",

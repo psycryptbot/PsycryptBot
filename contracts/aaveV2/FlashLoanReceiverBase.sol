@@ -11,7 +11,21 @@
 
 pragma solidity >=0.4.22 <0.9.0;
 
-// No reason to have the "safe" imports as overflow checking is built into solc
-// and accounts for it by default on verisions <= 0.8.
 
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import { IFlashLoanReceiver } from "./IFlashLoanReceiver.sol";
+import { ILendingPoolAddressesProvider } from "./ILendingPoolAddressesProvider.sol";
+import { Withdrawable } from "../Utilities/Withdrawable.sol";
+import { ILendingPool } from "./ILendingPool.sol";
+
+abstract contract FlashLoanReceiverBase is IFlashLoanReceiver, Withdrawable {
+
+  ILendingPoolAddressesProvider public immutable ADDRESSES_PROVIDER;
+  ILendingPool public immutable LENDING_POOL;
+
+  constructor(ILendingPoolAddressesProvider provider) {
+    ADDRESSES_PROVIDER = provider;
+    LENDING_POOL = ILendingPool(provider.getLendingPool());
+  }
+
+}

@@ -11,6 +11,7 @@
 
 pragma solidity >=0.4.22 <0.9.0;
 
+
 import { DataTypes } from "./DataTypes.sol";
 import { ILendingPoolAddressesProvider } from "./ILendingPoolAddressesProvider.sol";
 
@@ -426,4 +427,5 @@ interface ILendingPool {
   function setPause(bool val) external;
 
   function paused() external view returns (bool);
+
 }

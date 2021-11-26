@@ -10,6 +10,8 @@
 
 const path = require('path');
 const semver = require('semver');
+const {exit} = process; // This is funny ;p
+
 if (semver.gt('14.15.0', process.versions.node)) {
   console.error('[ERROR] node version lower than 14.15.0');
   exit(1);

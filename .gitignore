@@ -1,21 +1,43 @@
+# Logging
 logs/*.log
 logs/*.cache
 *.log
 yarn-debug.log*
 yarn-error.log*
+
+# Code Coverage: UNUSED
 lib-cov
 coverage
+# node
+node_modules/
+.node_repl_history
+.npm
+
+# Typescrypt (?)
+typings/
+
+# ESLint
+.eslintcache
+
+
+# Hardhat
+artifacts
+cache
+
+# Truffle
+build
+
+# Misc: UNUSED
 .nyc_output
 .grunt
 bower_components
 .lock-wscript
-node_modules/
-typings/
-.npm
-.eslintcache
-.node_repl_history
+
+# Archives
 *.tgz
+
+# Storage: UNUSED
 .env
-.cache
+
+# Editor
 .vscode
-#.database/*/

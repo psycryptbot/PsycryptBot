@@ -14,12 +14,11 @@ pragma solidity >=0.4.22 <0.9.0;
 
 import { FlashLoanReceiverBase } from "./aaveV2/FlashLoanReceiverBase.sol";
 import { ILendingPool } from "./aaveV2/ILendingPool.sol";
-import { ILendingPoolAddressesProvider } from "./aaveV2/IlendingPoolAddressesProvider.sol";
+import { ILendingPoolAddressesProvider } from "./aaveV2/ILendingPoolAddressesProvider.sol";
 import { IERC20 } from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 contract FlashLoan is FlashLoanReceiverBase {
 
-  // This error seems trivial... need to run tests
   constructor(ILendingPoolAddressesProvider provider) FlashLoanReceiverBase(provider) {}
 
   // Quite a basic flashloan exec function.

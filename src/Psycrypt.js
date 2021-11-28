@@ -26,7 +26,6 @@ class Psycrypt extends Logger {
   /**
    * Creates an instance of Psycrypt.
    *
-   * @param {Array} arguments
    * @memberof Psycrypt
    */
   constructor() {

@@ -20,6 +20,7 @@ const Logger = require('../Logger');
 class Executor extends Logger {
   /**
    * Creates an instance of Executor.
+   *
    * @memberof Executor
    */
   constructor() {

@@ -21,6 +21,7 @@ const endpoints = require('./endpoints');
 class WebSocket extends Logger {
   /**
    * Creates an instance of Websocket.
+   *
    * @memberof Websocket
    */
   constructor() {
@@ -41,21 +42,26 @@ class WebSocket extends Logger {
 class REST extends Logger {
   /**
    * Creates an instance of REST.
+   *
+   * @argument {String} name
+   *    Logging name to be passed onto the parent class.
+   *
    * @memberof REST
    */
-  constructor() {
-    super('REST');
+  constructor(name) {
+    super(name);
     this.endpoints = endpoints;
 
     this.endContruction();
   }
 
-  // TODO: Define the type of `arguments`
   /**
    * Sends a request through axios.request
    * logs the response and arguments
    *
-   * @argument {*} args
+   * @argument {Dict} args
+   *    Arguments to be passed to axios.request.
+   *
    * @return {Dict}
    * @memberof REST
    */
@@ -69,6 +75,8 @@ class REST extends Logger {
    * Sends a get request to the URL passed in.
    *
    * @param {String} url
+   *    The URL to send the GET request to.
+   *
    * @memberof REST
    */
   async get(url) {

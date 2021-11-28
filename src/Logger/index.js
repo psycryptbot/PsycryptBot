@@ -43,7 +43,7 @@ class Logger {
   }
 
   /**
-   *
+   * The name associated with the logger
    *
    * @readonly
    * @memberof Logger
@@ -54,6 +54,7 @@ class Logger {
     }
     return this._name;
   }
+
   /**
    * Ends the logger construction process (and prints boot time)
    *
@@ -124,6 +125,7 @@ class Logger {
   /**
    * Takes a group of objects extending logger and
    * makes them sub-processes
+   *
    * @param {Array<Logger>} processes
    * @memberof Logger
    */

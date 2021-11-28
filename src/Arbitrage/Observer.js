@@ -31,6 +31,7 @@ const {EventEmitter} = require('events');
 class Observer extends Logger {
   /**
    * Creates an instance of Observer.
+   *
    * @memberof Observer
    */
   constructor() {

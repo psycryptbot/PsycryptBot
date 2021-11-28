@@ -23,6 +23,7 @@ const Observer = require('./Observer');
 class Arbitrage extends Logger {
   /**
    * Creates an instance of Arbitrage.
+   *
    * @memberof Arbitrage
    */
   constructor() {

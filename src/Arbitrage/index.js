@@ -9,6 +9,8 @@
 //
 
 const Logger = require('../Logger');
+const Executer = require('./Executor');
+const Observer = require('./Observer');
 
 /**
  * This class manages the arbirage section.
@@ -25,8 +27,10 @@ class Arbitrage extends Logger {
    */
   constructor() {
     super('Arbitrage');
-
-    this.log(`Started up Arbitrage module`);
+    this.executer = new Executer();
+    this.observer = new Observer();
+    this.adoptSubProcesses([this.executer, this.observer]);
+    this.endContruction();
   }
 }
 

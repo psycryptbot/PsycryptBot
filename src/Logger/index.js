@@ -30,19 +30,42 @@ class Logger {
    * @memberof Logger
    */
   constructor(name, useColor = true) {
-    this.name = name;
+    this._bootTime = Date.now();
+    this._name = name;
     this.children = [];
     this.parent = null;
-
     // TODO: find a way to make this easier to use
     this.colorUtil = new LoggerColorUtil();
     if (!useColor) {
       this.colorUtil.disable();
     }
+    this.debug(`Starting...`);
   }
 
   /**
-   * Normal Logging
+   *
+   *
+   * @readonly
+   * @memberof Logger
+   */
+  get name() {
+    if (this.parent != undefined) {
+      return `${this.parent.name} > ${this._name}`;
+    }
+    return this._name;
+  }
+  /**
+   * Ends the logger construction process (and prints boot time)
+   *
+   * @memberof Logger
+   */
+  endContruction() {
+    const difference = Date.now() - this._bootTime;
+    this.debug(`Started up ${this.name} +${difference}ms`);
+  }
+
+  /**
+   * Normal logging
    *
    * @param {String} message
    * @memberof Logger
@@ -87,19 +110,6 @@ class Logger {
   }
 
   /**
-   * Creates a logger that operates as a subprocess of the current instance
-   *
-   * @param {String} subName
-   * @memberof Logger
-   * @return {Logger}
-   */
-  createSubProcess(subName) {
-    const sub = new Logger(subName);
-    sub.attachToNewParent(this);
-    return sub;
-  }
-
-  /**
    * Takes the current logger and associates it with a parent
    *
    * @param {Logger} parent
@@ -108,9 +118,23 @@ class Logger {
    */
   becomeSubProcess(parent) {
     this.parent = parent;
-    const oldName = this.name.split(' ');
-    this.name = `${parent.name} > ${oldName[oldName.length-1]}`;
+    this.debug(`Became subprocess of ${parent._name}`);
+  }
+
+  /**
+   * Takes a group of objects extending logger and
+   * makes them sub-processes
+   * @param {Array<Logger>} processes
+   * @memberof Logger
+   */
+  adoptSubProcesses(processes) {
+    for (const process_ of processes) {
+      if (process_ == undefined) {
+        this.error(`Bro define your processes`);
+        continue;
+      }
+      process_.becomeSubProcess(this);
+    }
   }
 }
-
 module.exports = Logger;

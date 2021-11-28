@@ -16,7 +16,7 @@ const EventEmitter = require('events');
 const Logger = require('./Logger');
 const path = require('path');
 const rootPath = path.join(__dirname, '../');
-
+const Arbitrage = require('./Arbitrage');
 /**
  * Main state of the entire bot
  *
@@ -38,10 +38,13 @@ class Psycrypt extends Logger {
     this.version = version;
     this.arguments = minimalist(process.argv.slice(3));
     this.events = new EventEmitter();
-
+    this.arbitrage = new Arbitrage();
     // Check for config existance before anything
+
+    this.adoptSubProcesses([this.arbitrage]);
     this.ensureConfig();
     this.setupCommands();
+    this.endContruction();
   }
 
   /**

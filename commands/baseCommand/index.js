@@ -37,9 +37,6 @@ class BaseCommand extends Logger {
    * @param {Boolean} requiresAPI
    *    Set to true if Dashboard API access is
    *    required to run the command.
-   * @param {Psycrypt} parent
-   *    The parent that will be calling the command
-   *    which in this case is the Psycrypt object.
    * @param {String} location
    *    The physical location of copmmand for require cache purposes
    * @memberof BaseCommand
@@ -50,7 +47,6 @@ class BaseCommand extends Logger {
       version,
       requiresNetwork,
       requiresAPI,
-      parent,
       location,
   ) {
     super(name);
@@ -58,7 +54,6 @@ class BaseCommand extends Logger {
     this.version = version;
     this.requiresNetwork = requiresNetwork;
     this.requiresAPI = requiresAPI;
-    this.parent = parent;
     this.location = location;
     this.events = new EventEmitter();
   }

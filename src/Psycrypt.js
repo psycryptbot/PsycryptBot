@@ -38,12 +38,11 @@ class Psycrypt extends Logger {
     this.arguments = minimalist(process.argv.slice(3));
     this.events = new EventEmitter();
     this.arbitrage = new Arbitrage();
-    // Check for config existance before anything
-
     this.adoptSubProcesses([this.arbitrage]);
     this.ensureConfig();
     this.setupCommands();
     this.endContruction();
+    process.psycrypt = this;
   }
 
   /**

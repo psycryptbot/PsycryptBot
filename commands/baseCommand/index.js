@@ -11,9 +11,6 @@
 const path = require('path');
 const rootPath = path.join(__dirname, '../../');
 const Logger = require(path.join(rootPath, 'src/logger'));
-const EventEmitter = require('events');
-// eslint-disable-next-line no-unused-vars
-const Psycrypt = require('../../src/Psycrypt');
 
 /**
  * The main command interface that will be managed
@@ -55,7 +52,16 @@ class BaseCommand extends Logger {
     this.requiresNetwork = requiresNetwork;
     this.requiresAPI = requiresAPI;
     this.location = location;
-    this.events = new EventEmitter();
+
+    // Execute event: executeStart
+    this.on('executeStart', () => {
+      this.debug(`Executing`);
+      this._executeStamp = Date.now();
+    });
+    // Execute end event: executeEnd
+    this.on('executeEnd', () => {
+      this.debug(`Finished executing +${Date.now() - this._executeStamp}ms`);
+    });
   }
 
   /**
@@ -64,7 +70,40 @@ class BaseCommand extends Logger {
    * @memberof BaseCommand
    */
   shutdown() {
-    this.events.emit('shutdown');
+    this.emit('shutdown');
+  }
+
+  /**
+   * The body of the command; The entry point so-to-speak.
+   *
+   * We don't have to worry about arguments here because they
+   * are located in the process variable
+   *
+   * ```js
+   * const commandArgs = process.psycrypt.arguments;
+   * ```
+   *
+   * @memberof BaseCommand
+   */
+  execute() {
+    this.warn(`Nothing to execute?`);
+  }
+
+  /**
+   * Executes a command and fires associated events
+   *
+   * @param {BaseCommand} command
+   * @static
+   * @memberof BaseCommand
+   */
+  static executeCommand(command) {
+    if (command != null) {
+      command.emit('executeStart');
+      command.execute();
+      command.emit('executeEnd');
+    } else {
+      console.error('Command not found');
+    }
   }
 }
 

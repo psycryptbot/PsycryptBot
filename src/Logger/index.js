@@ -14,14 +14,14 @@
 // NOTE: Possibly move away from console.warn and console.error
 
 const LoggerColorUtil = require('./color');
-
+const EventEmitter = require('events');
 /**
  * Main logger class for entire bot.
  * Classes can extend from this
  *
  * @class Logger
  */
-class Logger {
+class Logger extends EventEmitter {
   /**
    * Creates an instance of Logger
    *
@@ -30,6 +30,7 @@ class Logger {
    * @memberof Logger
    */
   constructor(name, useColor = true) {
+    super();
     this._bootTime = Date.now();
     this._name = name;
     this.children = [];
@@ -39,7 +40,6 @@ class Logger {
     if (!useColor) {
       this.colorUtil.disable();
     }
-    this.debug(`Starting...`);
   }
 
   /**
@@ -119,7 +119,6 @@ class Logger {
    */
   becomeSubProcess(parent) {
     this.parent = parent;
-    this.debug(`Became subprocess of ${parent._name}`);
   }
 
   /**
@@ -132,7 +131,7 @@ class Logger {
   adoptSubProcesses(processes) {
     for (const process_ of processes) {
       if (process_ == undefined) {
-        this.error(`Bro define your processes`);
+        this.error(`Please don't pass undefined parameters`);
         continue;
       }
       process_.becomeSubProcess(this);

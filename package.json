@@ -4,10 +4,13 @@
   "description": "We see the moon, we steal the moon",
   "main": "index.js",
   "scripts": {
+    "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
-    "node": "16.0.0"
+    "node": "^16.0.0",
+    "npm": ">= 7.0.0",
+    "yarn": ">= 1.22.0"
   },
   "author": "Corban Amouzou, Hunter Ummels, Jules Amalie",
   "devDependencies": {
@@ -34,6 +37,7 @@
     "lodash": "^4.17.21",
     "minimist": "^1.2.5",
     "path": "^0.12.7",
+    "readline-sync": "^1.4.10",
     "semver": "^7.3.5"
   },
   "license": "NONE"

@@ -9,7 +9,6 @@
 //
 
 const Logger = require('../Logger');
-const {EventEmitter} = require('events');
 /**
  * Axios
  * WSS ethereum.getDefaultProvider ()
@@ -36,9 +35,6 @@ class Observer extends Logger {
    */
   constructor() {
     super('Observer');
-    // this.restABI = new REST();
-    this.events = new EventEmitter();
-    // this.adoptSubProcesses([this.restABI]);
     this.endContruction();
   }
 }

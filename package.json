@@ -36,6 +36,7 @@
     "klaw": "^4.0.1",
     "lodash": "^4.17.21",
     "minimist": "^1.2.5",
+    "moralis": "^0.0.140",
     "path": "^0.12.7",
     "readline-sync": "^1.4.10",
     "semver": "^7.3.5"

@@ -117,8 +117,6 @@ class Psycrypt extends Logger {
    *
    * @param {String} commandName
    * @return {BaseCommand}
-   * @complexity
-   *    O(n) : Where n is the number of commands in this.commands
    * @memberof Psycrypt
    */
   getCommand(commandName) {

@@ -32,10 +32,11 @@ class MoralisInterface extends REST {
   /**
    * Creates an instance of MoralisInterface.
    *
+   * @param {String} name
    * @memberof MoralisInterface
    */
-  constructor() {
-    super('Moralis (Web3)');
+  constructor(name) {
+    super(name);
     this.chain = MORALIS_CHAINS.ethereum;
     this.rateLimit = 3000; // 3k Requests
     this.rateLimitResetInterval = 60000; // Per minute
@@ -57,7 +58,7 @@ class MoralisInterface extends REST {
    * @requestWeight `1` Request
    * @memberof MoralisInterface
    */
-  async getTokenMetadata(addresses, chain = this.chain) {
+  async _getTokenMetadata(addresses, chain = this.chain) {
     return await this.rateLimitedExecution(1, async () => {
       this.debug(`Getting token metadata from address(es): ${addresses}`);
       const ret = await Moralis.Web3API.token.getTokenMetadata({
@@ -82,7 +83,7 @@ class MoralisInterface extends REST {
    * @requestWeight `1` Request
    * @memberof MoralisInterface
    */
-  async getMetadataBySymbol(symbols, chain = this.chain) {
+  async _getMetadataBySymbol(symbols, chain = this.chain) {
     return await this.rateLimitedExecution(1, async () => {
       this.debug(`Getting token metadata from symbols(s): ${symbols}`);
       const ret = await Moralis.Web3API.token.getTokenMetadata({
@@ -109,7 +110,7 @@ class MoralisInterface extends REST {
    * @return {Dict} The response data
    * @memberof MoralisInterface
    */
-  async getTokenAllowance(ownerAddress, spenderAddress, tokenAddress) {
+  async _getTokenAllowance(ownerAddress, spenderAddress, tokenAddress) {
     return await this.rateLimitedExecution(1, async () => {
       this.debug(`Getting allowance of ${ownerAddress} from ${spenderAddress} in token: ${tokenAddress}`);
       const ret = await Moralis.Web3API.token.getTokenAllowance({
@@ -137,7 +138,7 @@ class MoralisInterface extends REST {
    * @return {Dict} The response data
    * @memberof MoralisInterface
    */
-  async getTokenPrice(tokenAddress, exchange, chain = this.chain) {
+  async _getTokenPrice(tokenAddress, exchange, chain = this.chain) {
     return await this.rateLimitedExecution(1, async () => {
       this.debug(`Getting address of ${tokenAddress}, from ${exchange} on the ${chain} chain`);
       const ret = await Moralis.Web3API.token.getTokenPrice({
@@ -194,7 +195,7 @@ class MoralisInterface extends REST {
    * @return {Dict} The response data
    * @memberof MoralisInterface
    */
-  async getPairReserves(pairAddress, chain = this.chain) {
+  async _getPairReserves(pairAddress, chain = this.chain) {
     return await this.rateLimitedExecution(1, async () => {
       this.debug(`Getting pair reserves of ${pairAddress} from the ${chain} chain`);
       const ret = await Moralis.Web3API.defi.getPairReserves({
@@ -215,7 +216,7 @@ class MoralisInterface extends REST {
    *
    * @memberof MoralisInterface
    */
-  handleMessage(response) {
+  _handleMessage(response) {
     if (response.message != undefined) {
       this.error(`Hit response error: ${response.message}`);
     }

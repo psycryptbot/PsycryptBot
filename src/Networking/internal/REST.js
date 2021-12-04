@@ -8,30 +8,7 @@
 // All rights reserved.
 //
 
-const Logger = require('../Logger');
-const axios = require('axios').default;
-const endpoints = require('./endpoints');
-
-/**
- * The WebSocket interface
- *
- * @class WebSocket
- * @extends {Logger}
- */
-class WebSocket extends Logger {
-  /**
-   * Creates an instance of Websocket.
-   *
-   * @memberof Websocket
-   */
-  constructor() {
-    super('WebSocket');
-    this.endpoints = endpoints;
-
-    this.endContruction();
-  }
-}
-
+const Logger = require('../../Logger');
 
 /**
  * The REST interface
@@ -133,7 +110,4 @@ class REST extends Logger {
   }
 }
 
-module.exports = {
-  REST: REST,
-  WebSocket: WebSocket,
-};
+module.exports = REST;

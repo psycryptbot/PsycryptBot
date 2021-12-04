@@ -31,7 +31,7 @@ class Logger extends EventEmitter {
    */
   constructor(name, useColor = true) {
     super();
-    this._bootTime = Date.now();
+    this._bootTime = process.hrtime.bigint();
     this._name = name;
     this.children = [];
     this.parent = null;
@@ -61,8 +61,8 @@ class Logger extends EventEmitter {
    * @memberof Logger
    */
   endContruction() {
-    const difference = Date.now() - this._bootTime;
-    this.debug(`Started up ${this.name} +${difference}ms`);
+    const difference = Number(process.hrtime.bigint() - this._bootTime)*1.0;
+    this.debug(`Started up ${this.name} +${difference/1000000}ms`);
   }
 
   /**

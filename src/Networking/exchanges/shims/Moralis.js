@@ -168,7 +168,7 @@ class MoralisInterface extends REST {
    * @return {Dict} The response data.
    * @memberof MoralisInterface
    */
-  async getPairAddress(token1, token2, exchange, chain = this.chain) {
+  async _getPairAddress(token1, token2, exchange, chain = this.chain) {
     return await this.rateLimitedExecution(1, async () => {
       this.debug(`Getting token pair address of tokens (1|2) on the ${exchange} exchange and the ${chain} chain: (${token1}|${token2})`);
       const ret = await Moralis.Web3API.defi.getPairAddress({

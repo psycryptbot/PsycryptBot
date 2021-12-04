@@ -51,8 +51,14 @@ class REST extends Logger {
   constructor(name) {
     super(name);
     this.endpoints = endpoints;
-
+    this.rateLimit = -1;
+    this.counter = -1;
+    this.rateLimitResetInterval = -1;
+    this.lastCalledBuffer = -1;
     this.endContruction();
+    this.on('WAIT', (startDate) => {
+      this.debug(`Waiting ${startDate - Date.now()}ms for rate limits`);
+    });
   }
 
   /**
@@ -84,6 +90,45 @@ class REST extends Logger {
     return await this.request({
       method: 'GET',
       url,
+    });
+  }
+
+  /**
+   * Limits code execution to a ratelimit
+   * and emits a 'WAIT' event with an attached start time
+   * to begin executing the requests again
+   *
+   * @param {Number} requestCount
+   * @param {Function} executor
+   * @return {Promise<*>} A Promise wrapping the return value of `executor`
+   * @memberof REST
+   */
+  rateLimitedExecution(requestCount, executor) {
+    return new Promise(async (resolve, _) => {
+      // No rate limit
+      if (this.rateLimit < 1) {
+        resolve((await executor()));
+      }
+      // No counter, ie: first call
+      if (this.counter == -1) {
+        requestCount += 1;
+      } else {
+        // If we've non-explicity waited the interval reset counter
+        if (
+          (Date.now() - this.lastCalledBuffer) > this.rateLimitResetInterval
+        ) {
+          this.counter = 0;
+        }
+      }
+      // if the request count would hit the ratelimit,
+      // we wait on the current request.
+      if (this.counter + requestCount >= this.rateLimit) {
+        this.emit('WAIT', Date.now() + this.rateLimitResetInterval);
+        resolve(null); // Seems sus
+      } else {
+        this.counter += requestCount;
+        resolve(await executor());
+      }
     });
   }
 }

@@ -41,7 +41,6 @@ class Psycrypt extends Logger {
     process.psycrypt = this;
     this.adoptSubProcesses([this.arbitrage]);
     this.ensureConfig();
-    this.setupCommands();
     this.endContruction();
     this.runLoop();
   }
@@ -63,21 +62,6 @@ class Psycrypt extends Logger {
    */
   runLoop() {
     /*
-      Since this.arguments._[0] is the only one that matters for the commandName
-      we can slice the name from the array and allow the command we run to have
-      full access to `this.arguments` (or `process.psycrypt.arguments`)
-    */
-    if (this.arguments._.length >= 1) {
-      const commandName = this.arguments._[0];
-      const command = this.getCommand(commandName.toLowerCase());
-      if (command == null) {
-        this.error(`Unknown command: ${commandName}`);
-      } else {
-        BaseCommand.executeCommand(command);
-      }
-    }
-
-    /*
       With the loops, you can enter a command loop, exit it
       and then enter into runLoop if that's also flagged
     */
@@ -86,18 +70,12 @@ class Psycrypt extends Logger {
     const runLoop = keys.find((value) => /runLoop/gi.test(value));
     if (commandLoop || runLoop) { // Save a JMP instruction
       if (commandLoop) {
+        // Only setup commands when we need them
+        this.setupCommands();
         while (true) {
           const commandName = readlineSync.question(cyanBright('> '));
-          const commandLC = commandName.toLowerCase();
-          if (commandLC == 'done' || commandLC == 'exit') {
+          if (this.parseCommand(commandName)) {
             break;
-          }
-          const command = this.getCommand(commandLC);
-          if (command == null) {
-            process.stdout.cursorTo(0);
-            this.error(`Unknown command: ${commandName}`);
-          } else {
-            BaseCommand.executeCommand(command);
           }
         }
       }
@@ -106,9 +84,44 @@ class Psycrypt extends Logger {
           break; // Stubbing this for now
         }
       }
+    } else {
+      // TODO: Support loading one command at a time
+      this.setupCommands(); // Innefficient for one command?
+
+      /*
+        Since this.arguments._[0] is the only one that matters
+        for the commandName, we can slice the name from the array
+        and allow the command we run to have full access
+        to `this.arguments` (or `process.psycrypt.arguments`)
+      */
+      const commandName = this.arguments._.shift();
+      if (commandName) {
+        this.parseCommand(commandName);
+      }
     }
 
     // Shutdown code can be written here
+  }
+
+  /**
+   * Parses a command name, handles the execution, and catches invalid input
+   *
+   * @param {String} commandName
+   * @return {Boolean|undefined}
+   * @memberof Psycrypt
+   */
+  parseCommand(commandName) {
+    const commandLC = commandName.toLowerCase();
+    if (commandLC == 'done' || commandLC == 'exit') {
+      return true;
+    }
+    const command = this.getCommand(commandLC);
+    if (command == null) {
+      process.stdout.cursorTo(0);
+      this.error(`Unknown command: ${commandName}`);
+    } else {
+      BaseCommand.executeCommand(command);
+    }
   }
 
   // TODO: Implement aliases for shorthand
@@ -122,7 +135,7 @@ class Psycrypt extends Logger {
   getCommand(commandName) {
     let ret = null;
     Object.values(this.commands).forEach((command, _) => {
-      if (command.name.toLowerCase() == commandName) {
+      if (command._name.toLowerCase() == commandName) {
         ret = command;
       }
     });
@@ -191,6 +204,7 @@ class Psycrypt extends Logger {
     this.debug(`Loading command ${commandName}`);
     const location = path.join(commandPath, commandName);
     const commandObj = new (require(location))(location);
+    commandObj.becomeSubProcess(this);
     this.commands[commandObj.name] = commandObj;
   }
 

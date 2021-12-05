@@ -20,6 +20,6 @@ module.exports = {
   },
   'infura': {
     url: 'mainnet.infura.io',
-    ws: `/ws/v3/${process.psyConf.infuraKey}`,
+    ws: `/ws/v3/`, // TODO: If we use infura, get the key into config
   },
 };

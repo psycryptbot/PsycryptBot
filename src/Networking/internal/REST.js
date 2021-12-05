@@ -9,6 +9,7 @@
 //
 
 const Logger = require('../../Logger');
+const axios = require('axios');
 
 /**
  * The REST interface
@@ -27,7 +28,6 @@ class REST extends Logger {
    */
   constructor(name) {
     super(name);
-    this.endpoints = endpoints;
     this.rateLimit = -1;
     this.counter = -1;
     this.rateLimitResetInterval = -1;

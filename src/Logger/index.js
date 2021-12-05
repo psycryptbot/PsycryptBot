@@ -50,7 +50,7 @@ class Logger extends EventEmitter {
    */
   get name() {
     if (this.parent != undefined) {
-      return `${this.parent.name} > ${this._name}`;
+      return `${this.parent.name}: ${this._name}`;
     }
     return this._name;
   }
@@ -60,7 +60,7 @@ class Logger extends EventEmitter {
    *
    * @memberof Logger
    */
-  endContruction() {
+  endConstruction() {
     const difference = Number(process.hrtime.bigint() - this._bootTime)*1.0;
     this.debug(`Started up ${this.name} +${difference/1000000}ms`);
   }

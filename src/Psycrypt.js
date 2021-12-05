@@ -41,7 +41,7 @@ class Psycrypt extends Logger {
     process.psycrypt = this;
     this.adoptSubProcesses([this.arbitrage]);
     this.ensureConfig();
-    this.endContruction();
+    this.endConstruction();
     this.runLoop();
   }
 
@@ -60,7 +60,7 @@ class Psycrypt extends Logger {
    * the command and then enter into the runloop.
    * @memberof Psycrypt
    */
-  runLoop() {
+  async runLoop() {
     /*
       With the loops, you can enter a command loop, exit it
       and then enter into runLoop if that's also flagged
@@ -81,6 +81,7 @@ class Psycrypt extends Logger {
       }
       if (runLoop) {
         while (true) {
+          await this.arbitrage.executeArbitrageCycle();
           break; // Stubbing this for now
         }
       }

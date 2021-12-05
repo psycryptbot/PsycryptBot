@@ -26,7 +26,7 @@ class UniswapExchangeV2 extends BaseExchange {
    */
   constructor() {
     // Only one network is supported here, so we don't include network param
-    super('Uniswap v2 Exchange');
+    super('UniswapV2');
     this.tokenListUrl = 'https://gateway.ipfs.io/ipns/tokens.uniswap.org';
     this.tokenListName = 'uniswap_token_list';
     this.chain = this.data.chains.ethereumMain.values[0];

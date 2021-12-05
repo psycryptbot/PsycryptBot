@@ -26,7 +26,7 @@ class SushiswapExchange extends BaseExchange {
    */
   constructor() {
     // Only one network is supported here, so we don't include network param
-    super('Uniswap v2 Exchange');
+    super('Sushiswap');
     this.tokenListName = 'sushiswap_token_list';
     this.staticTokenList = true;
     this.chain = this.data.chains.ethereumMain.values[0];

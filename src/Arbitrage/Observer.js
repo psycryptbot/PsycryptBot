@@ -58,7 +58,7 @@ class Observer extends Logger {
     }
     exchangeValues = Object.values(this.exchanges);
     this.adoptSubProcesses(exchangeValues);
-    this.endContruction();
+    this.endConstruction();
   }
 
   /**
@@ -80,25 +80,25 @@ class Observer extends Logger {
    * @memberof Observer
    */
   async mergeTokenLists() {
+    // TODO: Skip this step if we trust our saved list
     this.masterList = {};
-    const namesAdded = [];
-    for (const exchange of this.exchanges) {
+    for (const exchange of Object.values(this.exchanges)) {
       const list = await exchange.getList();
-      for (const tokenInfo in list.tokens) {
-        if (namesAdded.includes(tokenInfo.name)) {
-          const listedTokenInfo = this.masterList[tokenInfo.name];
-          if (listedTokenInfo.address != tokenInfo.address) { // Sanity
-            // eslint-disable-next-line max-len
-            this.error(`Hit mismatched names! This could mean someone tampered with the addresses!`);
+      for (const tokenInfo of list.tokens) {
+        if (Object.keys(this.masterList).includes(tokenInfo.symbol)) {
+          const currentToken = this.masterList[tokenInfo.symbol];
+          if (!currentToken.supportedExchanges.includes(exchange._name)) {
+            currentToken.supportedExchanges.push(exchange._name);
+            this.masterList[currentToken] = currentToken;
           }
-          listedTokenInfo.supportedExchanges.push(exchange._name);
         } else {
-          namesAdded.append(tokenInfo.name);
-          tokenInfo.supportedExchanges = [exchange._name];
+          this.masterList[tokenInfo.symbol] = {
+            supportedExchanges: [exchange._name],
+          };
         }
       }
     }
-    const stringified = JSON.stringify(masterList, null, 2);
+    const stringified = JSON.stringify(this.masterList, null, 2);
     if (!fs.existsSync(masterListPath)) {
       fs.writeFileSync(masterListPath, stringified, {
         encoding: 'utf-8',

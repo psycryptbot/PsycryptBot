@@ -25,7 +25,7 @@ class Executor extends Logger {
    */
   constructor() {
     super('Executor');
-    this.endContruction();
+    this.endConstruction();
   }
 }
 

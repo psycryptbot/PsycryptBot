@@ -34,7 +34,7 @@ class VersionCommand extends BaseCommand {
         false,     // Requires Exchange API
         location,  // Require Location
     );
-    this.endContruction();
+    this.endConstruction();
   }
 
   /**

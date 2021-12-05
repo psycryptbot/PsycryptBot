@@ -16,7 +16,7 @@ const fs = require('fs');
 const path = require('path');
 
 const exchanges =
-  fs.readdirSync('./exchanges', {withFileTypes: true})
+  fs.readdirSync(path.join(__dirname, 'exchanges'), {withFileTypes: true})
       .filter((f) => !f.isDirectory() && path.extname(f.name) === '.js');
 for (const exchange of exchanges) {
   const name = path.basename(exchange.name, '.js');

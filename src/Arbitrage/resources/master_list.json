@@ -1,0 +1,3682 @@
+{
+  "1INCH": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "AAVE": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "ADX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "AERGO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "aETHc": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "agEUR": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "AGLD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "AKRO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ALCX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ALEPH": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ALPA": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ALPHA": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "alUSD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "AMP": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "AMPL": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ANGLE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ANKR": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ANT": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "ANY": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "API3": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "APW": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ARCH": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ARCx": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ARMOR": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "arNXM": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ASG": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ASSY": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ATTR": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "AUCTION": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "AUDIO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "AXS": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BAB": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BAC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BADGER": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BAL": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "BANANA": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BAND": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "BANK": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BANK/Bankless": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BAO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BASE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BASK": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BAT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "bBADGER": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "bbcDAI": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BCP": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BDI": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "bDIGG": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BFC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BGLD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BICO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BIFI": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BIOS": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BIT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BLO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BLOCKS": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BMI": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BNPL": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BNT": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "BOND": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BOR": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BPT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BTC2x-FLI": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BTM": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BUSD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BZRX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "C98": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "CAPS": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "cDAI": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "CEL": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "CELO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "CHEESE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "CNFT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "COL": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "COMBO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "COMP": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "CORE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "COVER": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "CQT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "CRD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "CRE8": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "CREAM": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "CRETH2": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "CRO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "CRPX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "CRV": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "CTX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "CVP": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "CVX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "cvxCRV": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "CWS": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DAI": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "DAO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DATA/Index": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DATA/Streamr": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DDX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DEFI+L": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DEGEN": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DELTA": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DERI": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DEXTF": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DFD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DFX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DG": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DIA": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DIGG": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DIVER": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DNT": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "DOG": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DOLA": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DOUGH": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DPI": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DRC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DSD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DUCK": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DUSD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DVF": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DYDX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "EDEN": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "EGT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ENJ": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ENS": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "ENTR": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "eRSDL": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ESD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "FARM": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "FEI": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "FLOAT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "FNX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "FODL": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "FOLD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "FONT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "FRAX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "FRONT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "FTM": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "FTT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "FXS": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "GENE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "GET": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "GFARM2": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "GHST": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "GLM": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "gm": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "GMEE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "GNO": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "GODS": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "GRT": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "HBTC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "HEGIC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "HEZ": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "HT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "HUSD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ibBTC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ibETHv2": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "IBY": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ICE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ICHI": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ID": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "IDLE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ILV": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "IMX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "INDEX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "INJ": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "INSUR": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "INV": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "IOST": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "IQ": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "jCHF": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "jEUR": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "jGBP": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "JPYC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "JRT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "KAE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "KKO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "KNC": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "KP3R": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "LDN": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "LDO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "LEAG": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "LEND": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "LEV": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "LEVX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "LFBTC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "LIFT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "LINA": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "LINK": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "LINKETHMOON": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "LON": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "LRC": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "LSD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "LUSD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MAID": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MAMZN": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MANA": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "MARK": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MARS": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MARS4": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MASK": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MASQ": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MBABA": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "mbBASED": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "mBTC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MEDIA": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MEME": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MEOW": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MetaCat": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MFB": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MGOOGL": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MIC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MIM": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MIS": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MIS2": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MIST": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MKR": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "MKRETHDOOM": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MLN": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "MM": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MM/Million": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MMSFT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MPH": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "mQQQ": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MSLV": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MTA": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MTSLA": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "Mush": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MUSO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MUST": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MVIXY": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "NAOS": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "NCR": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "NCT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "NDX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "NEAR": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "NEXO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "NFD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "NFTL": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "NFTX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "NIL": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "NMR": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "NSBT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "nTRUMP": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "NU": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "O3": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "oBTC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "OCEAN": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "OGN": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "OH-GEEZ": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "OHM": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "OKB": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "OMG": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ONE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "oneBTC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "oneETH": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "oneLINK": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "oneVBTC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "oneWING": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ONX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "OPIUM": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ORN": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "OUSD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "OXT": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "PAD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "PAX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "PAXG": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "PECO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "PENDLE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "PERP": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "PHTR": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "PICKLE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "PIPT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "Pixel": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "PLAY": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "PMON": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "PNK": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "POLY": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "POND": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "pONT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "POOL": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "PRE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "PREMIA": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "PROS": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "PSP": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "PUNDIX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "pWING": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "QINDO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "QUARTZ": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "RAI": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "RAIL": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "RAMP": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "RARE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "RARI": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "RATIODOOM": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "RATIOMOON": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "RAY": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "RCN": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "REN": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "renBCH": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "renBTC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "renDGB": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "renDOGE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "renFIL": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "renLUNA": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "renZEC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "REPv2": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "REVV": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "RGT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "RLC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "RNBW": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ROOK": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ROPE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ROUTE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "RSR": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "RULER": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "RUNE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "SAK3": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "SAND": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "sCEX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "sDEFI": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "SDT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "SEEN": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "SFI": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "SI": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "SKYRIM": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "SNX": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "SPANK": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "SPELL": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "SPS": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "SQUID": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "SRM": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "STAKE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "STAR": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "stETH/StakeHound": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "stFIRO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "stkATOM": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "stkXPRT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "STMX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "STND": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "STRP": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "stXYM": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "stZEN": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "Sunder": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "SURF": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "sUSD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "SUSHI": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "SWAG": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "SWAP": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "SX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "SXP": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "sXRP": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "SYN": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "tBTC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "TCAP": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "TCR": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "TEMPLE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "TETHERDOOM": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "tfTUSD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "TGBP": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "TLOS": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "TOKE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "TOMO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "TORN": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "TOWER": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "TRDL": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "TRIBE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "TRU": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "TRX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "TRY": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "TUSD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "TXL": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "UBXT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "UMA": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "UMB": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "UNI": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "UOP": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "USDC": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "USDK": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "USDN": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "USDP": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "USDT": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "UST": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "UWL": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "vBTC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "VEGA": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "VITE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "VOL": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "VRN": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "VSP": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "VUSD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "wanWASP": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WASABI": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WAVES": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WBTC": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "WCELO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WCUSD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WET": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WETH": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "WFIL": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WKDA": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WLTC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WMATIC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WNCG": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "wNXM": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WOM": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WOO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WOOFY": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WOW": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WSCRT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "wstETH": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WXMR": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WXRP": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WZEC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "XBE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "XDEFI": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "XFT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "XRUNE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "xSUSHI": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "XYZ": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "YAM": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "YAX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "YEL": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "YETI": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "YFI": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "YFII": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "YGG": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "YLA": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "YLD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "YLD/YieldApp": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "YOP": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "YPIE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "yUSD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "yvBOOST": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "yveCRV-DAO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ZHEGIC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ZIG": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ZLOT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ZRX": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "AVAX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BNB": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BTC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ETH": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MATIC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "SC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WTLOS": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "cBAT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "cETH": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "cREP": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "cSAI": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "cUSDC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "cUSDT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "cWBTC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "cZRX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "REP": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "SAI": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ADA": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ASR": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ATM": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ATOM": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BAKE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "bALBT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BCH": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BLK": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "bROOBEE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BSCX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BTCB": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BTCST": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BURGER": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "CAKE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "CAN": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "CTK": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DICE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DITTO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DOT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "EOS": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "FIL": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "FRIES": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "FUEL": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "HARD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "Helmet": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "JNTR/b": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "JUV": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "KAVA": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "KUN": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "LTC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "mAMZN": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MATH": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MCRN": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "mGOOGL": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "mNFLX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "mTSLA": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "NAR": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "NULS": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "NVT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "NYA": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "OG": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ONT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "PROM": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "PSG": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "QUSD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "REEF": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "SHWA": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "SPARTA": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "STAX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "STM": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "TEN": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "TWT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "UNFI": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "USDX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "VAI": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WBNB": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "wCCX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WENLAMBO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "wSOTE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "XRP": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "XTZ": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "XVS": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ZEC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WOKT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ETC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "FIN": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "FLUX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "KINE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "SFG": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "SHIB": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WING": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ZKS": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WXDAI": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "XMOON": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DEXT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "fUSD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "OM": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WFUSE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ARPA": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BAG": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BAGS": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BEE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BETH": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "CIR": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "CNNS": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DAIHECO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DMC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "EDC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "FILDA": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "GOF": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "HBC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "HBCH": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "HBO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "HBSV": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "HDOT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "HFI": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "HFIL": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "HLTC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "HPT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "HXTZ": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "LAMB": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "Lava": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "LHB": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "LLC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "LLS": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MDX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "SKM": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "SLNV2": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "SOVI": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "SWFTC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "USDCHECO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "USDTHECO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WHT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ADDY": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "AXMATIC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "AXN": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BCT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BONE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "CHUM": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "COLLAR": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DATA": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DHT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DINO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DMAGIC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DRAX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "dTOP": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DTX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ELE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ETH2x-FLI": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "FISH": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "FOX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "GAJ": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "GMS": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "GYSR": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "INST": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "IRON": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "KLIMA": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "KOM": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "KRILL": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MFT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "miMatic": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MVI": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "OMEN": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "pAUTO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "PGOV": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "PIXEL": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "POLAR": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "polyBUNNY": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "PolyDoge": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "polyFRAX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "polyFXS": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "Propel": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "PUSD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "PYD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "PYQ": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "Qi": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ROLL": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "SPADE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "TEL": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "TETU": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "TITAN": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "USV": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "wBAN": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "wFIL": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WOLF": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WORK": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WSPP": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "fBAND": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "fBNB": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "fBTC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "fCHF": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "fCNY": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "fETH": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "fEUR": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "fGBP": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "fGOLD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "fJPY": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "fKRW": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "fLINK": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "fSILVER": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "fUSDT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "fWTIOIL": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "sFTM": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WFTM": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "aROME": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BEANS": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BEPRO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MAI": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MTRG": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "POLK": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "RELAY": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "RivrDoge": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "RIVRSHIBA": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WMOVR": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ERC20S": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WGLMR": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "FUSD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ADoge": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ALCH": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "aMoon": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ARBY": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ARBYS": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ARVAULT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "BUCK": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "CAP": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "CELR": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DODO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DPX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "DXD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "EUX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "FUSE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "GMX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MAGIC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MAGNET": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MCB": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "NYAN": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "PL2": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "PPEGG": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "RDPX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "SWPR": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "USX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "VISR": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "wsOHM": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "Z2O": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "cBTC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "cDOGE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "cEUR": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "cMCO2": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "cSHIBA": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "cUSD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "cXOF": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "mCELO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "mcEUR": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "mcUSD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "rCELO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "sCELO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "UBE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WAVAX": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "MOVR": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "oldSUSHI": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "oldUSDT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "oldWETH": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "TIME": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "1BTC": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "bscADA": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "bscBUSD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "bscDOT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "IKURA": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "JENN": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "LMA": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "LUNA": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "ODAO": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "TRANQ": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "VINCI": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "VIPER": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WISE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WONE": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "1BUSD": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "1ETH": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "1LINK": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "PRT": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "WPALM": {
+    "supportedExchanges": [
+      "Sushiswap"
+    ]
+  },
+  "[object Object]": {
+    "supportedExchanges": [
+      "Sushiswap",
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "CVC": {
+    "supportedExchanges": [
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "KEEP": {
+    "supportedExchanges": [
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "LOOM": {
+    "supportedExchanges": [
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "STORJ": {
+    "supportedExchanges": [
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  },
+  "TBTC": {
+    "supportedExchanges": [
+      "UniswapV2",
+      "UniswapV3"
+    ]
+  }
+}

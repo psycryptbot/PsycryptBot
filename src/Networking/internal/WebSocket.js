@@ -8,8 +8,8 @@
 // All rights reserved.
 //
 
-const Logger = require('../Logger');
-const endpoints = require('./endpoints');
+const Logger = require('../../Logger');
+const endpoints = require('../endpoints');
 
 /**
  * The WebSocket interface

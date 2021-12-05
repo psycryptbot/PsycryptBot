@@ -8,8 +8,8 @@
 // All rights reserved.
 //
 
-const REST = require('REST');
-const WebSocket = require('WebSocket');
+const REST = require('./REST');
+const WebSocket = require('./WebSocket');
 
 module.exports = {
   REST,

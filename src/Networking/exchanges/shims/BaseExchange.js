@@ -8,7 +8,7 @@
 // All rights reserved.
 //
 
-const {MoralisInterface} = require('./Moralis');
+const MoralisInterface = require('./Moralis');
 const path = require('path');
 const fs = require('fs');
 
@@ -190,30 +190,33 @@ class BaseExchange extends MoralisInterface {
   async _updateTokenListIfNeeded() {
     // eslint-disable-next-line max-len
     this.tokenListPath = path.join(__dirname, `../TokenLists/${this.tokenListName}.json`);
-    if (this.staticTokenList) {
+
+    const writeList = async () => {
+      const data = (await this.get(this.tokenListUrl)).data;
+      data.lastUpdatedTimestamp = Date.now();
+      fs.writeFileSync(this.tokenListPath, JSON.stringify(data, null, 2), {
+        encoding: 'utf-8',
+      });
+      this.tokenList = data;
+    };
+
+    if (this.staticTokenList == true) {
       if (!this.tokenList) {
         this.tokenList = require(this.tokenListPath);
       }
       return;
     }
 
-    const writeData = async () => {
-      const data = await this.get(this.tokenListUrl).data;
-      data.lastUpdatedTimestamp = Date.now();
-      fs.writeFileSync(this.tokenListPath, JSON.stringify(data, null, 2), {
-        encoding: 'utf-8',
-      });
-      return data;
-    };
-
-    if (fs.existsSync(tokenListPath)) {
-      const tokenList = require(tokenListPath);
+    if (fs.existsSync(this.tokenListPath)) {
+      const tokenList = require(this.tokenListPath);
       const oneDay = ((1000*60)*60) * 24;
       if ((Date.now() - tokenList.lastUpdatedTimestamp) > oneDay) {
-        this.tokenList = await writeData();
+        await writeList();
+      } else {
+        this.tokenList = require(this.tokenListPath);
       }
     } else {
-      this.tokenList = await writeData();
+      await writeList();
     }
   }
 

@@ -32,7 +32,7 @@ class Arbitrage extends Logger {
     this.observer = new Observer();
     this.executionCycle = 0;
     this.adoptSubProcesses([this.executer, this.observer]);
-    this.endContruction();
+    this.endConstruction();
   }
 
   /**

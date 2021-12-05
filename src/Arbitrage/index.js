@@ -30,8 +30,21 @@ class Arbitrage extends Logger {
     super('Arbitrage');
     this.executer = new Executer();
     this.observer = new Observer();
+    this.executionCycle = 0;
     this.adoptSubProcesses([this.executer, this.observer]);
     this.endContruction();
+  }
+
+  /**
+   * Executes an arbitrage cycle. This includes both monitoring and
+   * executing the trasnactions on the exchange.
+   *
+   * @memberof Arbitrage
+   */
+  async executeArbitrageCycle() {
+    this.executionCycle += 1;
+    await this.observer.executeObservationCycle();
+    // TODO: Write the Executor cycle
   }
 }
 

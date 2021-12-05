@@ -216,6 +216,16 @@ class BaseExchange extends MoralisInterface {
       this.tokenList = await writeData();
     }
   }
+
+  /**
+   * Calls `this._updateTokenListIfNeeded` and returns `this.tokenList`
+   *
+   * @memberof BaseExchange
+   */
+  async getList() {
+    await this._updateTokenListIfNeeded();
+    return this.tokenList;
+  }
 }
 
 module.exports = BaseExchange;

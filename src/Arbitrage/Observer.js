@@ -8,18 +8,29 @@
 // All rights reserved.
 //
 
+/*
+  Control Flow
+  -----------------
+  1. Get a list of all the tokens on each exchange
+  2. Merge all the token listings into one master list
+  3. Iterate through every token on the master list
+    1. Get a list of all the exchanges that have the token
+    2. Compare token prices along each exchange
+    -----(After first iteration in loop)-----
+    3. Get pair address of current token and previous token
+    4. Check reserves of each to see ratio
+    5. Compare ratio to volume to determine if profitability
+      is assured
+  4. Log out results, send notification to application and server
+  5. Calculate gas for each positive result and estimate losses
+  6. Start a distributed execution chain of all profitable transactions
+*/
+
 const Logger = require('../Logger');
-/**
- * Axios
- * WSS ethereum.getDefaultProvider ()
- * infura: https://blog.infura.io/getting-started-with-infura-28e41844cc89/
- * .on
- * https://github.com/6eer/uniswap-sushiswap-arbitrage-bot
- * https://0x.org/
- * https://0x.org/docs/api
- * https://chainprox.com/earn
- * https://docs.soliditylang.org/en/v0.5.4/control-structures.html#error-handling-assert-require-revert-and-exceptions
- */
+const exchanges = require('../Networking').exchanges;
+const path = require('path');
+const fs = require('fs');
+const masterListPath = path.join(__dirname, './resources/master_list.json');
 
 /**
  * The interface between the bot and the DEX's to monitor them
@@ -35,7 +46,69 @@ class Observer extends Logger {
    */
   constructor() {
     super('Observer');
+    this.exchanges = {};
+    this.lastCheckedToken = null;
+    this.masterList = null;
+    const exchangeKeys = Object.keys(exchanges);
+    let exchangeValues = Object.values(exchanges);
+    for (let i = 0; i < exchangeKeys.length; i++) {
+      const currentExchangeName = exchangeKeys[i];
+      const CurrentExchangeClass = exchangeValues[i];
+      this.exchanges[currentExchangeName] = new CurrentExchangeClass();
+    }
+    exchangeValues = Object.values(this.exchanges);
+    this.adoptSubProcesses(exchangeValues);
     this.endContruction();
+  }
+
+  /**
+   * Executes an observation cycle where all the exchanges are checked, and
+   * arbitrage opportunities are saved + logged.
+   *
+   * @memberof Observer
+   */
+  async executeObservationCycle() {
+    if (this.masterList == null) {
+      await this.mergeTokenLists();
+    }
+  }
+
+  /**
+   * Merges all the lists together and writes to the master list
+   * file if a new token was added.
+   *
+   * @memberof Observer
+   */
+  async mergeTokenLists() {
+    this.masterList = {};
+    const namesAdded = [];
+    for (const exchange of this.exchanges) {
+      const list = await exchange.getList();
+      for (const tokenInfo in list.tokens) {
+        if (namesAdded.includes(tokenInfo.name)) {
+          const listedTokenInfo = this.masterList[tokenInfo.name];
+          if (listedTokenInfo.address != tokenInfo.address) { // Sanity
+            // eslint-disable-next-line max-len
+            this.error(`Hit mismatched names! This could mean someone tampered with the addresses!`);
+          }
+          listedTokenInfo.supportedExchanges.push(exchange._name);
+        } else {
+          namesAdded.append(tokenInfo.name);
+          tokenInfo.supportedExchanges = [exchange._name];
+        }
+      }
+    }
+    const stringified = JSON.stringify(masterList, null, 2);
+    if (!fs.existsSync(masterListPath)) {
+      fs.writeFileSync(masterListPath, stringified, {
+        encoding: 'utf-8',
+      });
+    // eslint-disable-next-line max-len
+    } else if (!(fs.readFileSync(masterListPath, {encoding: 'utf8'}) == stringified)) {
+      fs.writeFileSync(masterListPath, stringified, {
+        encoding: 'utf-8',
+      });
+    }
   }
 }
 

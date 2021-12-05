@@ -8,7 +8,9 @@
 // All rights reserved.
 //
 
-module.exports = {};
+module.exports = {
+  exchanges: {},
+};
 
 const fs = require('fs');
 const path = require('path');
@@ -19,5 +21,5 @@ const exchanges =
 for (const exchange of exchanges) {
   const name = path.basename(exchange.name, '.js');
   if (name == 'index') continue;
-  module.exports[name] = require(`./exchanges/${name}`);
+  module.exports.exchanges[name] = require(`./exchanges/${name}`);
 }

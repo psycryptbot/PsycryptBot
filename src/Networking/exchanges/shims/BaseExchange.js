@@ -9,6 +9,8 @@
 //
 
 const {MoralisInterface} = require('./Moralis');
+const path = require('path');
+const fs = require('fs');
 
 /**
  * The base cryptocurrency exchange ABI describer of which
@@ -26,6 +28,11 @@ class BaseExchange extends MoralisInterface {
    */
   constructor(name) {
     super(name);
+    this.tokenListUrl = '';
+    this.tokenListName = '';
+    this.tokenListPath = '';
+    this.staticTokenList = false;
+    this.tokenList = null;
   }
 
   /**
@@ -36,15 +43,15 @@ class BaseExchange extends MoralisInterface {
    *
    * @memberof BaseExchange
    */
-  getTokenList() {
-    this.warnNotImplemented('getTokenList');
+  async getTokenList() {
+    this._warnNotImplemented('getTokenList');
     return null;
   }
 
   /**
    * Gets a price of a token in USD
    *
-   * @param {*} _token
+   * @param {String} _token
    *    The symbol or address of a token
    *
    * @return {Dict|null}
@@ -52,8 +59,8 @@ class BaseExchange extends MoralisInterface {
    *
    * @memberof BaseExchange
    */
-  getTokenPrice(_token) {
-    this.warnNotImplemented('getTokenPrice');
+  async getTokenPrice(_token) {
+    this._warnNotImplemented('getTokenPrice');
     return null;
   }
 
@@ -70,8 +77,8 @@ class BaseExchange extends MoralisInterface {
    * @return {Dict|null}
    * @memberof BaseExchange
    */
-  getTokenPairMetadata(_token1, _token2) {
-    this.warnNotImplemented('getTokenPairMetadata');
+  async getTokenPairMetadata(_token1, _token2) {
+    this._warnNotImplemented('getTokenPairMetadata');
     return null;
   }
 
@@ -93,8 +100,8 @@ class BaseExchange extends MoralisInterface {
    * @return {Dict|null}
    * @memberof BaseExchange
    */
-  getTokenPairReserves(_pairAddress) {
-    this.warnNotImplemented('getTokenPairReserves');
+  async getTokenPairReserves(_pairAddress) {
+    this._warnNotImplemented('getTokenPairReserves');
     return null;
   }
   /* eslint-enable max-len */
@@ -114,8 +121,8 @@ class BaseExchange extends MoralisInterface {
    * @return {Dict<String, Number>|null}
    * @memberof BaseExchange
    */
-  calculateRatio(_token1, _token2, _reserves) {
-    this.warnNotImplemented('calculateRatio');
+  async calculateRatio(_token1, _token2, _reserves) {
+    this._warnNotImplemented('calculateRatio');
     return null;
   }
 
@@ -131,8 +138,8 @@ class BaseExchange extends MoralisInterface {
    *
    * @memberof BaseExchange
    */
-  determineAddress(_token) {
-    this.warnNotImplemented('determineAddress');
+  async determineAddress(_token) {
+    this._warnNotImplemented('determineAddress');
     return null;
   }
 
@@ -144,8 +151,70 @@ class BaseExchange extends MoralisInterface {
    *    The name of the function that was called when not implemented
    * @memberof BaseExchange
    */
-  _warnNotImplemented(functionName) {
+  async _warnNotImplemented(functionName) {
     this.warn(`"${functionName}" not implemented in ${this.constructor.name}`);
+  }
+
+  /**
+   * Acts as a logic gate between two control flows depending
+   * on whether the config supports moralis
+   *
+   * @param {Function} moralisExecutor
+   *    The code that utilizes moralis
+   * @param {Function} otherExecutor
+   *    The code that uses other means
+   *
+   * @return {*} The return value of the executed code
+   * @memberof BaseExchange
+   */
+  async _useMoralisContextIfAvailable(moralisExecutor, otherExecutor) {
+    // TODO: Intentionally broken, fix later
+    if (process.psycrypt.config.useMoralis || true) {
+      return await moralisExecutor();
+    } else {
+      return await otherExecutor();
+    }
+  }
+
+  /**
+   * Ensures the existance of the token list curated by an exchange.
+   * Location on disk is `../TokenLists/` + `this.tokenListName`
+   * If it's not there writes it to disk. After ensuring, it checks to
+   * see if it's up to date. If not, it updates the list.
+   *
+   * Visit: `https://tokenlists.org` to see how they're structured, and
+   * how to get a hold of one.
+   *
+   * @memberof BaseExchange
+   */
+  async _updateTokenListIfNeeded() {
+    // eslint-disable-next-line max-len
+    this.tokenListPath = path.join(__dirname, `../TokenLists/${this.tokenListName}.json`);
+    if (this.staticTokenList) {
+      if (!this.tokenList) {
+        this.tokenList = require(this.tokenListPath);
+      }
+      return;
+    }
+
+    const writeData = async () => {
+      const data = await this.get(this.tokenListUrl).data;
+      data.lastUpdatedTimestamp = Date.now();
+      fs.writeFileSync(this.tokenListPath, JSON.stringify(data, null, 2), {
+        encoding: 'utf-8',
+      });
+      return data;
+    };
+
+    if (fs.existsSync(tokenListPath)) {
+      const tokenList = require(tokenListPath);
+      const oneDay = ((1000*60)*60) * 24;
+      if ((Date.now() - tokenList.lastUpdatedTimestamp) > oneDay) {
+        this.tokenList = await writeData();
+      }
+    } else {
+      this.tokenList = await writeData();
+    }
   }
 }
 

@@ -26,8 +26,6 @@ class WebSocket extends Logger {
   constructor() {
     super('WebSocket');
     this.endpoints = endpoints;
-
-    this.endContruction();
   }
 }
 

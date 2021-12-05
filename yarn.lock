@@ -750,6 +750,11 @@
   dependencies:
     antlr4ts "^0.5.0-alpha.4"
 
+"@sushiswap/default-token-list@^18.18.0":
+  version "18.18.0"
+  resolved "https://registry.yarnpkg.com/@sushiswap/default-token-list/-/default-token-list-18.18.0.tgz#6d893d2dbaf74bbb495809521ccd29d50e5ef596"
+  integrity sha512-yVLH3pgHF7ZLCSPci45p9G0Ljgnug67VHuoD38tkp22PjbqQOl08TEo8Qi0DbfIwJLQ7PRy5R8heKh0qD6B/eA==
+
 "@szmarczak/http-timer@^1.1.2":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@szmarczak/http-timer/-/http-timer-1.1.2.tgz#b1665e2c461a2cd92f4c1bbf50d5454de0d4b421"

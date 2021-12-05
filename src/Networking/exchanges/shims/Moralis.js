@@ -12,11 +12,11 @@
 
 // TODO: Use process.psycrypt.config for environment information
 // TODO: Make the server URL get setup during bot setup as dynamic
-// TODO: Support more chains depending on where we want to arbitrage
+// TODO: Write shorthand for random values in MoralisData
 
 const {REST} = require('../../internal');
 const Moralis = require('moralis/node');
-
+const MoralisData = require('./MoralisData.json');
 
 /**
  * The interface for the Moralis sandboxing the features that we use
@@ -37,7 +37,9 @@ class MoralisInterface extends REST {
    */
   constructor(name) {
     super(name);
-    this.chain = MORALIS_CHAINS.ethereum;
+    this.data = MoralisData;
+    this.chain = ''; // this.data.chains.ethereumMain.values[0];
+    this.exchange = ''; // this.data.chains.ethereumMain.exchanges.uniswapv3;
     this.rateLimit = 3000; // 3k Requests
     this.rateLimitResetInterval = 60000; // Per minute
     Moralis.start({
@@ -138,7 +140,7 @@ class MoralisInterface extends REST {
    * @return {Dict} The response data
    * @memberof MoralisInterface
    */
-  async _getTokenPrice(tokenAddress, exchange, chain = this.chain) {
+  async _getTokenPrice(tokenAddress, exchange = this.exchange, chain = this.chain) {
     return await this.rateLimitedExecution(1, async () => {
       this.debug(`Getting address of ${tokenAddress}, from ${exchange} on the ${chain} chain`);
       const ret = await Moralis.Web3API.token.getTokenPrice({
@@ -168,7 +170,7 @@ class MoralisInterface extends REST {
    * @return {Dict} The response data.
    * @memberof MoralisInterface
    */
-  async _getPairAddress(token1, token2, exchange, chain = this.chain) {
+  async _getPairAddress(token1, token2, exchange = this.exchange, chain = this.chain) {
     return await this.rateLimitedExecution(1, async () => {
       this.debug(`Getting token pair address of tokens (1|2) on the ${exchange} exchange and the ${chain} chain: (${token1}|${token2})`);
       const ret = await Moralis.Web3API.defi.getPairAddress({
@@ -222,9 +224,4 @@ class MoralisInterface extends REST {
     }
   }
 }
-
-const MORALIS_CHAINS = {
-  ethereum: 'eth',
-};
-
 module.exports = MoralisInterface;

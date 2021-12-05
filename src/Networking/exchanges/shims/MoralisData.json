@@ -1,0 +1,91 @@
+{
+  "chains": {
+    "ethereumMain": {
+      "values": [
+        "eth",
+        "mainnet",
+        "0x1"
+      ],
+      "exchanges": {
+        "uniswapv2": "uniswap-v2",
+        "uniswapv3": "uniswap-v3",
+        "sushiswap": "sushiswap"
+      }
+    },
+    "ropsten": {
+      "values": [
+        "testnet",
+        "ropsten",
+        "0x3"
+      ]
+    },
+    "rinkeby": {
+      "values": [
+        "rinkeby",
+        "0x4"
+      ]
+    },
+    "goerli": {
+      "values": [
+        "goerli",
+        "0x5"
+      ]
+    },
+    "kovan": {
+      "values": [
+        "kovan",
+        "0x2a"
+      ]
+    },
+    "bscMainnet": {
+      "values": [
+        "bsc",
+        "binance",
+        "binance smart chain",
+        "0x38"
+      ],
+      "exchanges": [
+        "pancakeswap-v1",
+        "pancakeswap-v2"
+      ]
+    },
+    "bscTestNet": {
+      "values": [
+        "bsc testnet",
+        "binance testnet",
+        "binance smart chain testnet",
+        "0x61"
+      ]
+    },
+    "polygon": {
+      "values": [
+        "matic",
+        "polygon",
+        "0x89"
+      ],
+      "exchanges": {
+        "quickswap": "quickswap"
+      }
+    },
+    "mumbai": {
+      "values": [
+        "mumbai",
+        "matic testnet",
+        "polygon testnet",
+        "0x13881"
+      ]
+    },
+    "avalanche": {
+      "values": [
+        "avalanche",
+        "0xfa"
+      ]
+    },
+    "fantom": {
+      "values": [
+        "fantom",
+        "0xfa"
+      ]
+    }
+  }
+}

@@ -32,7 +32,6 @@ class REST extends Logger {
     this.counter = -1;
     this.rateLimitResetInterval = -1;
     this.lastCalledBuffer = -1;
-    this.endContruction();
     this.on('WAIT', (startDate) => {
       this.debug(`Waiting ${startDate - Date.now()}ms for rate limits`);
     });

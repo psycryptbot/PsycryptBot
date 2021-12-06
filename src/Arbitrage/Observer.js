@@ -8,18 +8,21 @@
 // All rights reserved.
 //
 
+// TODO: Move calculation logic into own functions or extensions.
+// TODO: Document major logic within `executeObservationCycle`
+
 /*
   Control Flow
   -----------------
   1. Get a list of all the tokens on each exchange
   2. Merge all the token listings into one master list
   3. Iterate through every token on the master list
-    1. Get a list of all the exchanges that have the token
-    2. Compare token prices along each exchange
+    3.1. Get a list of all the exchanges that have the token
+    3.2. Compare token prices along each exchange
     -----(After first iteration in loop)-----
-    3. Get pair address of current token and previous token
-    4. Check reserves of each to see ratio
-    5. Compare ratio to volume to determine if profitability
+    3.3. Get pair address of current token and previous token
+    3.4. Check reserves of each to see ratio
+    3.5. Compare ratio to volume to determine if profitability
       is assured
   4. Log out results, send notification to application and server
   5. Calculate gas for each positive result and estimate losses
@@ -49,15 +52,11 @@ class Observer extends Logger {
     this.exchanges = {};
     this.lastCheckedToken = null;
     this.masterList = null;
-    const exchangeKeys = Object.keys(exchanges);
-    let exchangeValues = Object.values(exchanges);
-    for (let i = 0; i < exchangeKeys.length; i++) {
-      const currentExchangeName = exchangeKeys[i];
-      const CurrentExchangeClass = exchangeValues[i];
-      this.exchanges[currentExchangeName] = new CurrentExchangeClass();
+    this.scannedData = {};
+    for (const exchangeName of Object.keys(exchanges)) {
+      this.exchanges[exchangeName] = new exchanges[exchangeName]();
     }
-    exchangeValues = Object.values(this.exchanges);
-    this.adoptSubProcesses(exchangeValues);
+    this.adoptSubProcesses(Object.values(this.exchanges));
     this.endConstruction();
   }
 
@@ -71,6 +70,106 @@ class Observer extends Logger {
     if (this.masterList == null) {
       await this.mergeTokenLists();
     }
+    for (const tokenSymbol of Object.keys(this.masterList)) {
+      const tokenData = this.masterList[tokenSymbol];
+
+      this.debug(`Starting checks for token: ${tokenSymbol}`);
+
+      if (tokenData.supportedExchanges.length > 1) {
+      // eslint-disable-next-line max-len
+        for (const exchange of this.getExchangeFromNames(tokenData.supportedExchanges)) {
+          this.debug(`Checking on ${exchange._name}`);
+          // Implement cache
+          const scannedTokenData = this.scannedData[tokenSymbol];
+          // eslint-disable-next-line max-len
+          if (scannedTokenData == null || !scannedTokenData.exchanges[exchange._name]) {
+            const initialData = scannedTokenData || {
+              exchanges: {},
+            };
+            const tokenPrice = await exchange.getTokenPrice(tokenSymbol);
+            if (tokenPrice == null) {
+              // eslint-disable-next-line max-len
+              this.debug(`Skipping token ${tokenSymbol} as unable to get price`);
+              continue;
+            }
+            initialData.exchanges[exchange._name] = {
+              tokenPrice: tokenPrice.usdPrice,
+            };
+            this.scannedData[tokenSymbol] = initialData;
+          }
+        }
+      } else {
+        this.debug(`Skipping ${tokenSymbol} as only one exchange supports it`);
+        continue; // If we add more code later
+      }
+    }
+
+    // Calculating
+    const sortedKeys = Object.keys(this.scannedData).sort();
+    for (const tokenSymbol of sortedKeys) {
+      this.debug(`Calculating token ${tokenSymbol}`);
+      const currentToken = this.scannedData[tokenSymbol];
+      const len = Object.keys(currentToken.exchanges).length;
+      if (len > 1) { // Sorta does nothing atm.
+        const checkedPairs = [];
+        for (let i = 1; i < len; i++) {
+          const exchangeNames = Object.keys(currentToken.exchanges);
+          const currentExchangeData = currentToken.exchanges[exchangeNames[i]];
+          const currentExchangeName = exchangeNames[i];
+          let nextExchangeName;
+          if (i == exchangeNames.length-1 && len >= 2) {
+            nextExchangeName = exchangeNames[0];
+          } else {
+            nextExchangeName = exchangeNames[i + 1];
+            // eslint-disable-next-line max-len
+            if (checkedPairs.includes([currentExchangeName, nextExchangeName])) {
+              continue;
+            }
+          }
+          const nextExchangeData = currentToken.exchanges[nextExchangeName];
+
+          checkedPairs.push([currentExchangeName, nextExchangeName]);
+
+          /* eslint-disable */
+          const biggerValue = Math.max(currentExchangeData.tokenPrice, nextExchangeData.tokenPrice);
+          const smallerValue = Math.min(currentExchangeData.tokenPrice, nextExchangeData.tokenPrice);
+          /* eslint-enable */
+
+          // TODO: find a better alternative, calculate minimum difference
+          if ((biggerValue - smallerValue) >= 0) {
+            const executeCacheItem = {
+              exchange1: currentExchangeName,
+              exchange2: nextExchangeName,
+              difference: biggerValue - smallerValue,
+            };
+            this.parent.executer.executeCache.push(executeCacheItem);
+            // eslint-disable-next-line max-len
+            this.debug(`Found difference in prices! (${currentExchangeName}/${nextExchangeName}): ${JSON.stringify(executeCacheItem, null, 2)}`);
+          }
+        }
+      }
+    }
+  }
+
+  /**
+   * Sorts `this.exchanges` given a name.
+   *
+   * @param {Array<String>} names
+   *    The names of the exchanges to extract
+   *
+   * @return {Array<BaseExchange?>}
+   * @memberof Observer
+   */
+  getExchangeFromNames(names) {
+    const ret = [];
+    names = names.sort(); // More efficient hopefully
+    const exchanges = this.exchanges;
+    for (const name of names) {
+      if (exchanges[name] != null) {
+        ret.push(exchanges[name]);
+      }
+    }
+    return ret;
   }
 
   /**

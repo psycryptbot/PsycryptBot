@@ -25,6 +25,7 @@ class Executor extends Logger {
    */
   constructor() {
     super('Executor');
+    this.executeCache = [];
     this.endConstruction();
   }
 }

@@ -66,9 +66,12 @@ class MoralisInterface extends REST {
       const ret = await Moralis.Web3API.token.getTokenMetadata({
         chain: chain,
         addresses: addresses,
+      }).catch((reason) => {
+        this._handleMessage(reason);
       });
-      this.handleMessage(ret);
-      this.debug(`Received metadata: ${JSON.stringify(ret, null, 2)}`);
+      if (ret != null) {
+        this.debug(`Received metadata: ${JSON.stringify(ret, null, 2)}`);
+      }
       return ret;
     });
   }
@@ -91,9 +94,12 @@ class MoralisInterface extends REST {
       const ret = await Moralis.Web3API.token.getTokenMetadata({
         chain: chain,
         addresses: symbols,
+      }).catch((reason) => {
+        this._handleMessage(reason);
       });
-      this.handleMessage(ret);
-      this.debug(`Received metadata: ${JSON.stringify(ret, null, 2)}`);
+      if (ret != null) {
+        this.debug(`Received metadata: ${JSON.stringify(ret, null, 2)}`);
+      }
       return ret;
     });
   }
@@ -119,9 +125,12 @@ class MoralisInterface extends REST {
         owner_address: ownerAddress,
         spender_address: spenderAddress,
         address: tokenAddress,
+      }).catch((reason) => {
+        this._handleMessage(reason);
       });
-      this.handleMessage(ret);
-      this.debug(`Received allowance: ${JSON.stringify(ret, null, 2)}`);
+      if (ret != null) {
+        this.debug(`Received allowance: ${JSON.stringify(ret, null, 2)}`);
+      }
       return ret;
     });
   }
@@ -147,9 +156,12 @@ class MoralisInterface extends REST {
         address: tokenAddress,
         chain: chain,
         exchange: exchange,
+      }).catch((reason) => {
+        this._handleMessage(reason);
       });
-      this.handleMessage(ret);
-      this.debug(`Received token price data: ${JSON.stringify(ret, null, 2)}`);
+      if (ret != null) {
+        this.debug(`Received token price data: ${JSON.stringify(ret, null, 2)}`);
+      }
       return ret;
     });
   }
@@ -178,9 +190,12 @@ class MoralisInterface extends REST {
         token1_address: token2,
         exchange: exchange,
         chain: chain,
+      }).catch((reason) => {
+        this._handleMessage(reason);
       });
-      this.handleMessage(ret);
-      this.debug(`Received token pair address and data: ${JSON.stringify(ret, null, 2)}`);
+      if (ret != null) {
+        this.debug(`Received token pair address and data: ${JSON.stringify(ret, null, 2)}`);
+      }
       return ret;
     });
   }
@@ -203,9 +218,12 @@ class MoralisInterface extends REST {
       const ret = await Moralis.Web3API.defi.getPairReserves({
         address: pairAddress,
         chain: chain,
+      }).catch((reason) => {
+        this._handleMessage(reason);
       });
-      this.handleMessage(ret);
-      this.debug(`Received pair reserves: ${JSON.stringify(ret, null, 2)}`);
+      if (ret != null) {
+        this.debug(`Received pair reserves: ${JSON.stringify(ret, null, 2)}`);
+      }
       return ret;
     });
   }
@@ -213,14 +231,14 @@ class MoralisInterface extends REST {
   /**
    * Handles and logs errors in responses from the Moralis module.
    *
-   * @param {Dict} response
-   *    The response to check for an error in
+   * @param {Dict} reason
+   *    The response to log the error for
    *
    * @memberof MoralisInterface
    */
-  _handleMessage(response) {
-    if (response.message != undefined) {
-      this.error(`Hit response error: ${response.message}`);
+  _handleMessage(reason) {
+    if (reason != undefined && reason.error != undefined) {
+      this.error(`Hit moralis response error: "${reason.error}"`);
     }
   }
 }

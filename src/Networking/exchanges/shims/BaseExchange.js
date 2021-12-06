@@ -38,30 +38,32 @@ class BaseExchange extends MoralisInterface {
   /**
    * Retrievs token list from storage or requests it if outdated
    *
-   * @return {Dict|null}
+   * @return {Promise<Dict|null>}
    *    The response.
    *
    * @memberof BaseExchange
    */
   async getTokenList() {
-    this._warnNotImplemented('getTokenList');
-    return null;
+    await this._updateTokenListIfNeeded();
+    return this.tokenList;
   }
 
   /**
    * Gets a price of a token in USD
    *
-   * @param {String} _token
+   * @param {String} token
    *    The symbol or address of a token
    *
-   * @return {Dict|null}
+   * @return {Promise<Dict|null>}
    *    The response.
    *
    * @memberof BaseExchange
    */
-  async getTokenPrice(_token) {
-    this._warnNotImplemented('getTokenPrice');
-    return null;
+  async getTokenPrice(token) {
+    token = this.determineAddress(token);
+    return this._useMoralisContextIfAvailable(async () => {
+      return this._getTokenPrice(token);
+    }, null);
   }
 
   /**
@@ -69,17 +71,20 @@ class BaseExchange extends MoralisInterface {
    * a list or it can query it from the exchange. The latter is only
    * used when the list hasn't been updated for too long.
    *
-   * @param {String} _token1
+   * @param {String} token1
    *    The symbol or address of the first token
-   * @param {String} _token2
+   * @param {String} token2
    *    The symbol or address of the second token
    *
-   * @return {Dict|null}
+   * @return {Promise<Dict|null>}
    * @memberof BaseExchange
    */
-  async getTokenPairMetadata(_token1, _token2) {
-    this._warnNotImplemented('getTokenPairMetadata');
-    return null;
+  async getTokenPairMetadata(token1, token2) {
+    token1 = this.determineAddress(token1);
+    token2 = this.determineAddress(token2);
+    return this._useMoralisContextIfAvailable(async () => {
+      return this._getTokenPairMetadata([token1, token2]);
+    }, null);
   }
 
   /* eslint-disable max-len */
@@ -94,15 +99,16 @@ class BaseExchange extends MoralisInterface {
    * }
    * ```
    *
-   * @param {String} _pairAddress
+   * @param {String} pairAddress
    *    The address of the token pair
    *
-   * @return {Dict|null}
+   * @return {Promise<Dict|null>}
    * @memberof BaseExchange
    */
-  async getTokenPairReserves(_pairAddress) {
-    this._warnNotImplemented('getTokenPairReserves');
-    return null;
+  async getTokenPairReserves(pairAddress) {
+    return this._useMoralisContextIfAvailable(async () => {
+      return this._getPairReserves(pairAddress);
+    });
   }
   /* eslint-enable max-len */
 
@@ -110,27 +116,30 @@ class BaseExchange extends MoralisInterface {
    * Calculates the ratio in a token pair reserve to find where a difference is.
    * If the ratio is not 1:1, we have potential profit.
    *
-   * @param {String} _token1
+   * @param {String} token1
    *    The symbol or address of the first token in the reserve
-   * @param {String} _token2
+   * @param {String} token2
    *    The symbol or address of the second token in the reserve
-   * @param {String} _reserves
+   * @param {String} reserves
    *    The reserve data to calculate the ratio of.
    *    Obtained through `getTokenPairReserves` of token1/token2
    *
-   * @return {Dict<String, Number>|null}
+   * @return {Promise<Dict<String, Number>|null>}
    * @memberof BaseExchange
    */
-  async calculateRatio(_token1, _token2, _reserves) {
-    this._warnNotImplemented('calculateRatio');
-    return null;
+  async calculateRatio(token1, token2, reserves) {
+    token1 = this.determineAddress(token1);
+    token2 = this.determineAddress(token2);
+    const token1Amount = this.getTokenPrice(token1) * reserves.reserve1;
+    const token2Amount = this.getTokenPrice(token2) * reserves.reserve2;
+    return `${token1Amount}:${token2Amount}`;
   }
 
   /**
    * Checks whether the input is a token address, and returns it back if it is.
    * If not, then it requests it or queries a local list for the address.
    *
-   * @param {String} _token
+   * @param {String} token
    *   The symbol or address of the token
    *
    * @return {String|null}
@@ -138,9 +147,20 @@ class BaseExchange extends MoralisInterface {
    *
    * @memberof BaseExchange
    */
-  async determineAddress(_token) {
-    this._warnNotImplemented('determineAddress');
-    return null;
+  determineAddress(token) {
+    let ret = null;
+    Object.values(this.tokenList.tokens).forEach((tokenVal) => {
+      if (tokenVal.symbol == token) {
+        ret = tokenVal.address;
+      } else if (token == tokenVal.address) {
+        ret = token;
+      }
+    });
+    if (ret == null) {
+      // eslint-disable-next-line max-len
+      this.error(`Invalid token address or token symbol ${require('util').inspect(token, false, -1, true)}`);
+    }
+    return ret;
   }
 
   /**
@@ -164,7 +184,7 @@ class BaseExchange extends MoralisInterface {
    * @param {Function} otherExecutor
    *    The code that uses other means
    *
-   * @return {*} The return value of the executed code
+   * @return {Promise<any>} The return value of the executed code
    * @memberof BaseExchange
    */
   async _useMoralisContextIfAvailable(moralisExecutor, otherExecutor) {

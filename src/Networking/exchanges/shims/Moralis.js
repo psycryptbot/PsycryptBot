@@ -36,16 +36,19 @@ class MoralisInterface extends REST {
    * @memberof MoralisInterface
    */
   constructor(name) {
-    super(name);
+    super(name, 'Moralis');
     this.data = MoralisData;
     this.chain = ''; // this.data.chains.ethereumMain.values[0];
     this.exchange = ''; // this.data.chains.ethereumMain.exchanges.uniswapv3;
-    this.rateLimit = 3000; // 3k Requests
-    this.rateLimitResetInterval = 60000; // Per minute
-    Moralis.start({
-      serverUrl: process.env.MORALIS_SERVER_URL,
-      appId: process.env.MORALIS_API_KEY,
-    });
+    this._.rateLimit = 3000; // 3k Requests
+    this._.rateLimitResetInterval = 60*1000; // Per minute
+    if (!process.psycrypt.registeredMoralisInstance) {
+      Moralis.start({
+        serverUrl: process.env.MORALIS_SERVER_URL,
+        appId: process.env.MORALIS_API_KEY,
+      });
+      process.psycrypt.registeredMoralisInstance = true;
+    }
   }
 
   /**
@@ -151,7 +154,7 @@ class MoralisInterface extends REST {
    */
   async _getTokenPrice(tokenAddress, exchange = this.exchange, chain = this.chain) {
     return await this.rateLimitedExecution(1, async () => {
-      this.debug(`Getting address of ${tokenAddress}, from ${exchange} on the ${chain} chain`);
+      this.debug(`Getting price of ${tokenAddress}, from ${exchange} on the ${chain} chain`);
       const ret = await Moralis.Web3API.token.getTokenPrice({
         address: tokenAddress,
         chain: chain,

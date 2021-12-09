@@ -10,6 +10,7 @@
 
 // TODO: Move calculation logic into own functions or extensions.
 // TODO: Document major logic within `executeObservationCycle`
+// TODO: Update logging style for display purposes
 
 /*
   Control Flow
@@ -106,37 +107,67 @@ class Observer extends Logger {
 
     // Calculating
     const sortedKeys = Object.keys(this.scannedData).sort();
+
     for (const tokenSymbol of sortedKeys) {
       this.debug(`Calculating token ${tokenSymbol}`);
       const currentToken = this.scannedData[tokenSymbol];
       const len = Object.keys(currentToken.exchanges).length;
+
       if (len > 1) { // Sorta does nothing atm.
         const checkedPairs = [];
+
         for (let i = 1; i < len; i++) {
           const exchangeNames = Object.keys(currentToken.exchanges);
           const currentExchangeData = currentToken.exchanges[exchangeNames[i]];
-          const currentExchangeName = exchangeNames[i];
+          let currentExchangeName = exchangeNames[i];
           let nextExchangeName;
+          let currentNamePairs;
+
           if (i == exchangeNames.length-1 && len >= 2) {
             nextExchangeName = exchangeNames[0];
+            currentNamePairs = [
+              currentExchangeName,
+              nextExchangeName,
+            ].sort();
           } else {
             nextExchangeName = exchangeNames[i + 1];
-            // eslint-disable-next-line max-len
-            if (checkedPairs.includes([currentExchangeName, nextExchangeName])) {
+            let skip = false;
+            currentNamePairs = [
+              currentExchangeName,
+              nextExchangeName,
+            ].sort();
+            checkedPairs.forEach((pair) => {
+              if (skip == false) {
+                skip = pair.every((name, idx) => {
+                  return name == currentNamePairs[idx];
+                });
+              }
+            });
+
+            if (skip) {
+              this.debug(`Skipping duplicate calculation`);
               continue;
             }
           }
+
+          checkedPairs.push(currentNamePairs);
           const nextExchangeData = currentToken.exchanges[nextExchangeName];
 
-          checkedPairs.push([currentExchangeName, nextExchangeName]);
 
           /* eslint-disable */
           const biggerValue = Math.max(currentExchangeData.tokenPrice, nextExchangeData.tokenPrice);
           const smallerValue = Math.min(currentExchangeData.tokenPrice, nextExchangeData.tokenPrice);
           /* eslint-enable */
 
+          // Correct the order (smaller --> bigger)
+          if (biggerValue == currentExchangeData.tokenPrice) {
+            const buffer = currentExchangeName;
+            currentExchangeName = nextExchangeName;
+            nextExchangeName = buffer;
+          }
+
           // TODO: find a better alternative, calculate minimum difference
-          if ((biggerValue - smallerValue) >= 0) {
+          if ((biggerValue - smallerValue) >= 20) {
             const executeCacheItem = {
               exchange1: currentExchangeName,
               exchange2: nextExchangeName,
@@ -188,7 +219,7 @@ class Observer extends Logger {
           const currentToken = this.masterList[tokenInfo.symbol];
           if (!currentToken.supportedExchanges.includes(exchange._name)) {
             currentToken.supportedExchanges.push(exchange._name);
-            this.masterList[currentToken] = currentToken;
+            this.masterList[tokenInfo.symbol] = currentToken;
           }
         } else {
           this.masterList[tokenInfo.symbol] = {

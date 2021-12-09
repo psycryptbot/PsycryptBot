@@ -3642,13 +3642,6 @@
       "Sushiswap"
     ]
   },
-  "[object Object]": {
-    "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
-    ]
-  },
   "CVC": {
     "supportedExchanges": [
       "UniswapV2",

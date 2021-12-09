@@ -18,6 +18,7 @@ const Arbitrage = require('./Arbitrage');
 const readlineSync = require('readline-sync');
 const {cyanBright} = require('chalk');
 const BaseCommand = require('../commands/baseCommand');
+
 /**
  * Main state of the entire bot
  *
@@ -31,14 +32,15 @@ class Psycrypt extends Logger {
    */
   constructor() {
     super('Psycrypt');
+    process.psycrypt = this;
     this.overwrites = {};
     this.config = {
       version,
     };
+    this.registeredMoralisInstance = false;
     this.commands = {};
     this.arguments = minimalist(process.argv.slice(2));
     this.arbitrage = new Arbitrage();
-    process.psycrypt = this;
     this.adoptSubProcesses([this.arbitrage]);
     this.ensureConfig();
     this.endConstruction();

@@ -21,22 +21,38 @@ class REST extends Logger {
   /**
    * Creates an instance of REST.
    *
-   * @argument {String} name
+   * @param {String} name
    *    Logging name to be passed onto the parent class.
+   * @param {String} rateLimitKey
+   *    The key ueed to access global ratelimiting buffers.
    *
    * @memberof REST
    */
-  constructor(name) {
+  constructor(name, rateLimitKey) {
     super(name);
-    this.rateLimit = -1;
-    this.counter = -1;
-    this.rateLimitResetInterval = -1;
-    this.lastCalledBuffer = -1;
-    this.on('WAIT', (startDate) => {
-      this.debug(`Waiting ${startDate - Date.now()}ms for rate limits`);
-    });
+    this.rateLimitKey = rateLimitKey;
   }
 
+  /**
+   * Gets the global rateLimitBuffer based on our buffer key
+   *
+   * @readonly
+   * @memberof REST
+   */
+  get _() {
+    if (process.psycrypt.rateLimitBuffer == undefined) {
+      process.psycrypt.rateLimitBuffer = {};
+    }
+    if (process.psycrypt.rateLimitBuffer[this.rateLimitKey] == undefined) {
+      process.psycrypt.rateLimitBuffer[this.rateLimitKey] = {
+        rateLimit: -1,
+        counter: -1,
+        rateLimitResetInterval: -1,
+        lastCalledBuffer: -1,
+      };
+    }
+    return process.psycrypt.rateLimitBuffer[this.rateLimitKey];
+  }
   /**
    * Sends a request through axios.request
    * logs the response and arguments
@@ -69,6 +85,7 @@ class REST extends Logger {
     });
   }
 
+  /* eslint-disable max-len */
   /**
    * Limits code execution to a ratelimit
    * and emits a 'WAIT' event with an attached start time
@@ -82,31 +99,37 @@ class REST extends Logger {
   rateLimitedExecution(requestCount, executor) {
     return new Promise(async (resolve, _) => {
       // No rate limit
-      if (this.rateLimit < 1) {
+      if (this._.rateLimit < 1) {
         resolve((await executor()));
       }
       // No counter, ie: first call
-      if (this.counter == -1) {
+      if (this._.counter == -1) {
         requestCount += 1;
       } else {
         // If we've non-explicity waited the interval reset counter
-        if (
-          (Date.now() - this.lastCalledBuffer) > this.rateLimitResetInterval
-        ) {
-          this.counter = 0;
+        if ((Date.now() - this._.lastCalledBuffer) > this._.rateLimitResetInterval) {
+          this._.counter = 0;
         }
       }
       // if the request count would hit the ratelimit,
       // we wait on the current request.
-      if (this.counter + requestCount >= this.rateLimit) {
-        this.emit('WAIT', Date.now() + this.rateLimitResetInterval);
+      if (this._.counter + requestCount >= this._.rateLimit) {
+        const futureTime = Date.now() + (this._.rateLimitResetInterval - this.lastCalledBuffer);
+        this.debug(`Waiting ${((futureTime*1.0)*60)} seconds for rate limits`);
+        setTimeout(async () => {
+          this.debug(`Resuming requests`);
+          resolve(await executor());
+        }, this._.rateLimitResetInterval);
         resolve(null); // Seems sus
       } else {
-        this.counter += requestCount;
+        this._.counter += requestCount;
+        this._.lastCalledBuffer = Date.now();
+        this.debug(`Set global counter to: ${this._.counter}`);
         resolve(await executor());
       }
     });
   }
+  /* eslint-enable max-len */
 }
 
 module.exports = REST;

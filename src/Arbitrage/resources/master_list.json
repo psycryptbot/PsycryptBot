@@ -1,3675 +1,3677 @@
 {
   "1INCH": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "AAVE": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "ADX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "AERGO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "aETHc": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "agEUR": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "AGLD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "AKRO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ALCX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ALEPH": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ALPA": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ALPHA": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "alUSD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "AMP": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "AMPL": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ANGLE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ANKR": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ANT": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "ANY": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "API3": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "APW": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ARCH": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ARCx": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ARMOR": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "arNXM": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ASG": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ASSY": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ATTR": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "AUCTION": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "AUDIO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "AXS": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BAB": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BAC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BADGER": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BAL": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "BANANA": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BAND": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "BANK": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BANK/Bankless": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BAO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BASE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BASK": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BAT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "bBADGER": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "bbcDAI": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BCP": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BDI": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "bDIGG": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BFC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BGLD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BICO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BIFI": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BIOS": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BIT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BLO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BLOCKS": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BMI": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BNPL": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BNT": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "BOND": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BOR": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BPT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BTC2x-FLI": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BTM": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BUSD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BZRX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "C98": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "CAPS": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "cDAI": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "CEL": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "CELO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "CHEESE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "CNFT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "COL": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "COMBO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "COMP": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "CORE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "COVER": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "CQT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "CRD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "CRE8": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "CREAM": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "CRETH2": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "CRO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "CRPX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "CRV": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "CTX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "CVP": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "CVX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "cvxCRV": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "CWS": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DAI": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "DAO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DATA/Index": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DATA/Streamr": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DDX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DEFI+L": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DEGEN": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DELTA": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DERI": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DEXTF": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DFD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DFX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DG": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DIA": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DIGG": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DIVER": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DNT": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "DOG": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DOLA": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DOUGH": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DPI": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DRC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DSD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DUCK": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DUSD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DVF": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DYDX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "EDEN": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "EGT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ENJ": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ENS": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "ENTR": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "eRSDL": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ESD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "FARM": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "FEI": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "FLOAT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "FNX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "FODL": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "FOLD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "FONT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "FRAX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "FRONT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "FTM": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "FTT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "FXS": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "GENE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "GET": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "GFARM2": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "GHST": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "GLM": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "gm": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "GMEE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "GNO": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "GODS": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "GRT": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "HBTC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "HEGIC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "HEZ": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "HT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "HUSD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ibBTC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ibETHv2": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "IBY": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ICE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ICHI": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ID": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "IDLE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ILV": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "IMX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "INDEX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "INJ": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "INSUR": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "INV": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "IOST": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "IQ": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "jCHF": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "jEUR": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "jGBP": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "JPYC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "JRT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "KAE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "KKO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "KNC": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "KP3R": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "LDN": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "LDO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "LEAG": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "LEND": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "LEV": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "LEVX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "LFBTC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "LIFT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "LINA": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "LINK": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "LINKETHMOON": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "LON": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "LRC": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "LSD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "LUSD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MAID": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MAMZN": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MANA": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "MARK": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MARS": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MARS4": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MASK": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MASQ": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MBABA": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "mbBASED": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "mBTC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MEDIA": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MEME": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MEOW": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MetaCat": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MFB": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MGOOGL": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MIC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MIM": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MIS": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MIS2": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MIST": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MKR": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "MKRETHDOOM": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MLN": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "MM": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MM/Million": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MMSFT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MPH": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "mQQQ": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MSLV": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MTA": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MTSLA": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "Mush": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MUSO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MUST": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MVIXY": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "NAOS": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "NCR": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "NCT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "NDX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "NEAR": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "NEXO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "NFD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "NFTL": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "NFTX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "NIL": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "NMR": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "NSBT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "nTRUMP": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "NU": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "O3": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "oBTC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "OCEAN": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "OGN": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "OH-GEEZ": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "OHM": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "OKB": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "OMG": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ONE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "oneBTC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "oneETH": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "oneLINK": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "oneVBTC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "oneWING": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ONX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "OPIUM": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ORN": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "OUSD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "OXT": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "PAD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "PAX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "PAXG": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "PECO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "PENDLE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "PERP": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "PHTR": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "PICKLE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "PIPT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "Pixel": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "PLAY": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "PMON": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "PNK": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "POLY": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "POND": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "pONT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "POOL": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "PRE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "PREMIA": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "PROS": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "PSP": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "PUNDIX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "pWING": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "QINDO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "QUARTZ": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "RAI": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "RAIL": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "RAMP": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "RARE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "RARI": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "RATIODOOM": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "RATIOMOON": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "RAY": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "RCN": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "REN": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "renBCH": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "renBTC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "renDGB": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "renDOGE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "renFIL": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "renLUNA": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "renZEC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "REPv2": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "REVV": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "RGT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "RLC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "RNBW": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ROOK": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ROPE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ROUTE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "RSR": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "RULER": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "RUNE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "SAK3": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "SAND": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "sCEX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "sDEFI": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "SDT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "SEEN": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "SFI": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "SI": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "SKYRIM": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "SNX": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "SPANK": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "SPELL": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "SPS": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "SQUID": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "SRM": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "STAKE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "STAR": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "stETH/StakeHound": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "stFIRO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "stkATOM": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "stkXPRT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "STMX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "STND": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "STRP": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "stXYM": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "stZEN": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "Sunder": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "SURF": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "sUSD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "SUSHI": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "SWAG": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "SWAP": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "SX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "SXP": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "sXRP": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "SYN": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "tBTC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "TCAP": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "TCR": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "TEMPLE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "TETHERDOOM": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "tfTUSD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "TGBP": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "TLOS": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "TOKE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "TOMO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "TORN": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "TOWER": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "TRDL": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "TRIBE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "TRU": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "TRX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "TRY": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "TUSD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "TXL": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "UBXT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "UMA": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "UMB": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "UNI": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "UOP": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "USDC": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "USDK": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "USDN": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "USDP": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "USDT": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "UST": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "UWL": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "vBTC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "VEGA": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "VITE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "VOL": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "VRN": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "VSP": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "VUSD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "wanWASP": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WASABI": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WAVES": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WBTC": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "WCELO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WCUSD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WET": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WETH": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "WFIL": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WKDA": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WLTC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WMATIC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WNCG": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "wNXM": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WOM": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WOO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WOOFY": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WOW": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WSCRT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "wstETH": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WXMR": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WXRP": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WZEC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "XBE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "XDEFI": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "XFT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "XRUNE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "xSUSHI": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "XYZ": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "YAM": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "YAX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "YEL": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "YETI": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "YFI": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "YFII": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "YGG": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "YLA": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "YLD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "YLD/YieldApp": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "YOP": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "YPIE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "yUSD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "yvBOOST": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "yveCRV-DAO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ZHEGIC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ZIG": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ZLOT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ZRX": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "AVAX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BNB": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BTC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ETH": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MATIC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "SC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WTLOS": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "cBAT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "cETH": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "cREP": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "cSAI": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "cUSDC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "cUSDT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "cWBTC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "cZRX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "REP": {
     "supportedExchanges": [
-      "Sushiswap",
-      "UniswapV2",
-      "UniswapV3"
+      "sushiswap",
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "SAI": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ADA": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ASR": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ATM": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ATOM": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BAKE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "bALBT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BCH": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BLK": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "bROOBEE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BSCX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BTCB": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BTCST": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BURGER": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "CAKE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "CAN": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "CTK": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DICE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DITTO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DOT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "EOS": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "FIL": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "FRIES": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "FUEL": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "HARD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "Helmet": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "JNTR/b": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "JUV": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "KAVA": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "KUN": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "LTC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "mAMZN": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MATH": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MCRN": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "mGOOGL": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "mNFLX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "mTSLA": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "NAR": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "NULS": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "NVT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "NYA": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "OG": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ONT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "PROM": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "PSG": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "QUSD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "REEF": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "SHWA": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "SPARTA": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "STAX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "STM": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "TEN": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "TWT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "UNFI": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "USDX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "VAI": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WBNB": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "wCCX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WENLAMBO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "wSOTE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "XRP": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "XTZ": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "XVS": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ZEC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WOKT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ETC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "FIN": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "FLUX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "KINE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "SFG": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "SHIB": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WING": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ZKS": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WXDAI": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "XMOON": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DEXT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "fUSD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "OM": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WFUSE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ARPA": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BAG": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BAGS": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BEE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BETH": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "CIR": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "CNNS": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DAIHECO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DMC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "EDC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "FILDA": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "GOF": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "HBC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "HBCH": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "HBO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "HBSV": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "HDOT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "HFI": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "HFIL": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "HLTC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "HPT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "HXTZ": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "LAMB": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "Lava": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "LHB": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "LLC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "LLS": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MDX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "SKM": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "SLNV2": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "SOVI": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "SWFTC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "USDCHECO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "USDTHECO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WHT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ADDY": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "AXMATIC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "AXN": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BCT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BONE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "CHUM": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "COLLAR": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DATA": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DHT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DINO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DMAGIC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DRAX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "dTOP": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DTX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ELE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ETH2x-FLI": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "FISH": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "FOX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "GAJ": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "GMS": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "GYSR": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "INST": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "IRON": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "KLIMA": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "KOM": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "KRILL": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MFT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "miMatic": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MVI": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "OMEN": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "pAUTO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "PGOV": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "PIXEL": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "POLAR": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "polyBUNNY": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "PolyDoge": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "polyFRAX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "polyFXS": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "Propel": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "PUSD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "PYD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "PYQ": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "Qi": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ROLL": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "SPADE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "TEL": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "TETU": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "TITAN": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "USV": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "wBAN": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "wFIL": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WOLF": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WORK": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WSPP": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "fBAND": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "fBNB": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "fBTC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "fCHF": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "fCNY": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "fETH": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "fEUR": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "fGBP": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "fGOLD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "fJPY": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "fKRW": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "fLINK": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "fSILVER": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "fUSDT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "fWTIOIL": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "sFTM": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WFTM": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "aROME": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BEANS": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BEPRO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MAI": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MTRG": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "POLK": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "RELAY": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "RivrDoge": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "RIVRSHIBA": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WMOVR": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ERC20S": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WGLMR": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "FUSD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ADoge": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ALCH": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "aMoon": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ARBY": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ARBYS": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ARVAULT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "BUCK": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "CAP": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "CELR": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DODO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DPX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "DXD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "EUX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "FUSE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "GMX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MAGIC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MAGNET": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MCB": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "NYAN": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "PL2": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "PPEGG": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "RDPX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "SWPR": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "USX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "VISR": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "wsOHM": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "Z2O": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "cBTC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "cDOGE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "cEUR": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "cMCO2": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "cSHIBA": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "cUSD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "cXOF": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "mCELO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "mcEUR": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "mcUSD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "rCELO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "sCELO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "UBE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WAVAX": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "MOVR": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "oldSUSHI": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "oldUSDT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "oldWETH": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "TIME": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "1BTC": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "bscADA": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "bscBUSD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "bscDOT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "IKURA": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "JENN": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "LMA": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "LUNA": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "ODAO": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "TRANQ": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "VINCI": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "VIPER": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WISE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WONE": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "1BUSD": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "1ETH": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "1LINK": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "PRT": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "WPALM": {
     "supportedExchanges": [
-      "Sushiswap"
+      "sushiswap"
     ]
   },
   "CVC": {
     "supportedExchanges": [
-      "UniswapV2",
-      "UniswapV3"
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "KEEP": {
     "supportedExchanges": [
-      "UniswapV2",
-      "UniswapV3"
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "LOOM": {
     "supportedExchanges": [
-      "UniswapV2",
-      "UniswapV3"
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "STORJ": {
     "supportedExchanges": [
-      "UniswapV2",
-      "UniswapV3"
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   },
   "TBTC": {
     "supportedExchanges": [
-      "UniswapV2",
-      "UniswapV3"
+      "uniswap-v2",
+      "uniswap-v3"
     ]
   }
 }

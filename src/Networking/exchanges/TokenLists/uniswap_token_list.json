@@ -1,9 +1,9 @@
 {
-  "name": "Uniswap Default List",
-  "timestamp": "2021-11-09T04:44:50.556Z",
+  "name": "Uniswap Labs List",
+  "timestamp": "2021-12-10T18:26:53.532Z",
   "version": {
     "major": 2,
-    "minor": 1,
+    "minor": 2,
     "patch": 0
   },
   "tags": {},
@@ -254,6 +254,14 @@
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xB64ef51C888972c908CFacf59B47C1AfBC0Ab8aC/logo.png"
     },
     {
+      "name": "Synth sUSD",
+      "address": "0x57Ab1ec28D129707052df4dF418D58a2D46d5f51",
+      "symbol": "sUSD",
+      "decimals": 18,
+      "chainId": 1,
+      "logoURI": "https://assets.coingecko.com/coins/images/5013/thumb/sUSD.png?1616150765"
+    },
+    {
       "chainId": 1,
       "address": "0x8dAEBADE922dF735c38C80C7eBD708Af50815fAa",
       "name": "tBTC",
@@ -430,5 +438,5 @@
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xd0A1E359811322d97991E03f863a0C30C2cF029C/logo.png"
     }
   ],
-  "lastUpdatedTimestamp": 1639010448461
+  "lastUpdatedTimestamp": 1639459335698
 }

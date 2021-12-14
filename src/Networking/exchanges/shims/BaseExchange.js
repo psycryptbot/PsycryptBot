@@ -61,8 +61,8 @@ class BaseExchange extends MoralisInterface {
    */
   async getTokenPrice(token) {
     token = this.determineAddress(token);
-    return this._useMoralisContextIfAvailable(async () => {
-      return this._getTokenPrice(token);
+    return await this._useMoralisContextIfAvailable(async () => {
+      return await this._getTokenPrice(token);
     }, null);
   }
 
@@ -79,11 +79,11 @@ class BaseExchange extends MoralisInterface {
    * @return {Promise<Dict|null>}
    * @memberof BaseExchange
    */
-  async getTokenPairMetadata(token1, token2) {
+  async getTokenPairAddress(token1, token2) {
     token1 = this.determineAddress(token1);
     token2 = this.determineAddress(token2);
-    return this._useMoralisContextIfAvailable(async () => {
-      return this._getTokenPairMetadata([token1, token2]);
+    return await this._useMoralisContextIfAvailable(async () => {
+      return await this._getPairAddress(token1, token2);
     }, null);
   }
 
@@ -106,8 +106,8 @@ class BaseExchange extends MoralisInterface {
    * @memberof BaseExchange
    */
   async getTokenPairReserves(pairAddress) {
-    return this._useMoralisContextIfAvailable(async () => {
-      return this._getPairReserves(pairAddress);
+    return await this._useMoralisContextIfAvailable(async () => {
+      return await this._getPairReserves(pairAddress);
     });
   }
   /* eslint-enable max-len */
@@ -127,12 +127,14 @@ class BaseExchange extends MoralisInterface {
    * @return {Promise<Dict<String, Number>|null>}
    * @memberof BaseExchange
    */
-  async calculateRatio(token1, token2, reserves) {
+  async getRatio(token1, token2, reserves) {
     token1 = this.determineAddress(token1);
     token2 = this.determineAddress(token2);
-    const token1Amount = this.getTokenPrice(token1) * reserves.reserve1;
-    const token2Amount = this.getTokenPrice(token2) * reserves.reserve2;
-    return `${token1Amount}:${token2Amount}`;
+    const token1Price = await this.getTokenPrice(token1);
+    const token2Price = await this.getTokenPrice(token2);
+    const token1Amount = token1Price.usdPrice * reserves.reserve0;
+    const token2Amount = token2Price.usdPrice * reserves.reserve1;
+    return [token1Amount, token2Amount];
   }
 
   /**

@@ -12,23 +12,6 @@
 // TODO: Document major logic within `executeObservationCycle`
 // TODO: Update logging style for display purposes
 
-/*
-  Control Flow
-  -----------------
-  1. Get a list of all the tokens on each exchange
-  2. Merge all the token listings into one master list
-  3. Iterate through every token on the master list
-    3.1. Get a list of all the exchanges that have the token
-    3.2. Compare token prices along each exchange
-    -----(After first iteration in loop)-----
-    3.3. Get pair address of current token and previous token
-    3.4. Check reserves of each to see ratio
-    3.5. Compare ratio to volume to determine if profitability
-      is assured
-  4. Log out results, send notification to application and server
-  5. Calculate gas for each positive result and estimate losses
-  6. Start a distributed execution chain of all profitable transactions
-*/
 
 const Logger = require('../Logger');
 const exchanges = require('../Networking').exchanges;
@@ -53,6 +36,7 @@ class Observer extends Logger {
     this.exchanges = {};
     this.lastCheckedToken = null;
     this.masterList = null;
+    this.executeCacheItems = [];
     this.scannedData = {};
     for (const exchangeName of Object.keys(exchanges)) {
       this.exchanges[exchangeName] = new exchanges[exchangeName]();
@@ -69,8 +53,22 @@ class Observer extends Logger {
    */
   async executeObservationCycle() {
     if (this.masterList == null) {
-      await this.mergeTokenLists();
+      await this.mergeTokenLists(); // Phase One
     }
+
+    await this.preformTokenScan(); // Phase Two
+    this.startDifferenceCalculation(this.scannedData); // Phase Three
+    await this.startLBFLCalculations(); // Phase Four
+  }
+
+
+  /**
+   * Preforms the scanning of the tokens in our masterlist
+   * and curates all results in `this.scannedData`
+   *
+   * @memberof Observer
+   */
+  async preformTokenScan() {
     for (const tokenSymbol of Object.keys(this.masterList)) {
       const tokenData = this.masterList[tokenSymbol];
 
@@ -78,7 +76,7 @@ class Observer extends Logger {
 
       if (tokenData.supportedExchanges.length > 1) {
       // eslint-disable-next-line max-len
-        for (const exchange of this.getExchangeFromNames(tokenData.supportedExchanges)) {
+        for (const exchange of this.getExchangesFromNames(tokenData.supportedExchanges)) {
           this.debug(`Checking on ${exchange._name}`);
           // Implement cache
           const scannedTokenData = this.scannedData[tokenSymbol];
@@ -104,12 +102,21 @@ class Observer extends Logger {
         continue; // If we add more code later
       }
     }
+  }
 
-    // Calculating
-    const sortedKeys = Object.keys(this.scannedData).sort();
+  /**
+   * With scanned tokens in place we can start to calculate our
+   * priority list for which tokens have a difference on which exchange
+   *
+   * @param {Dict} scannedData
+   *    Data retrieved by some sort of scanning process
+   *
+   * @memberof Observer
+   */
+  startDifferenceCalculation(scannedData) {
+    const sortedKeys = Object.keys(scannedData).sort();
 
     for (const tokenSymbol of sortedKeys) {
-      this.debug(`Calculating token ${tokenSymbol}`);
       const currentToken = this.scannedData[tokenSymbol];
       const len = Object.keys(currentToken.exchanges).length;
 
@@ -145,6 +152,7 @@ class Observer extends Logger {
             });
 
             if (skip) {
+              // TODO: Get this to trigger if it doesn't already do so
               this.debug(`Skipping duplicate calculation`);
               continue;
             }
@@ -172,14 +180,138 @@ class Observer extends Logger {
               exchange1: currentExchangeName,
               exchange2: nextExchangeName,
               difference: biggerValue - smallerValue,
+              token: tokenSymbol,
             };
-            this.parent.executer.executeCache.push(executeCacheItem);
             // eslint-disable-next-line max-len
-            this.debug(`Found difference in prices! (${currentExchangeName}/${nextExchangeName}): ${JSON.stringify(executeCacheItem, null, 2)}`);
+            this.debug(`Difference (${executeCacheItem.token}) ${JSON.stringify(executeCacheItem, null, 2)}`);
+            this.executeCacheItems.push(executeCacheItem);
           }
         }
       }
     }
+  }
+
+  /**
+   * Starts calculating the optimal token to flashloan on behalf of both
+   * exchanges. This is the "Liquidity Based FlashLoan" calculation.
+   * This is pretty resource intensive, so if they could be calculated
+   * by multiple bots, and aggregated later, that would be awesome.
+   *
+   * @memberof Observer
+   */
+  async startLBFLCalculations() {
+    for (let i = 0; i < this.executeCacheItems.length;) {
+      const cacheItem = this.executeCacheItems[i];
+      // TODO: Find an exact token list for AAVE, for now assume any token works
+      for (const tokenSymbol of Object.keys(this.masterList)) {
+        const tokenData = this.masterList[tokenSymbol];
+        if (
+          tokenData.supportedExchanges.includes(cacheItem.exchange1) &&
+          tokenData.supportedExchanges.includes(cacheItem.exchange2)
+        ) {
+          if (tokenSymbol == cacheItem.token) {
+            continue;
+          }
+          // This is literally saving quite a bit of time
+          const firstStepResult = await this.hasOptimalPairReserves(
+              tokenSymbol,
+              cacheItem.token,
+              cacheItem.exchange1,
+          );
+          if (!firstStepResult) {
+            this.debug(`Unusable: ${tokenSymbol}`);
+            continue;
+          }
+          const secondStepResult = await this.hasOptimalPairReserves(
+              cacheItem.token,
+              tokenSymbol,
+              cacheItem.exchange2,
+          );
+          if (!secondStepResult) {
+            this.debug(`Unusable: ${tokenSymbol}`);
+            continue;
+          }
+          // Seriously don't question my judgement
+
+          const results = [
+            firstStepResult,
+            secondStepResult,
+          ];
+
+          let estimatedProfits = cacheItem.difference; // Not including gas
+
+          for (const result of results) {
+            estimatedProfits += result[0] - result[1];
+          }
+
+          // eslint-disable-next-line max-len
+          this.debug(`Profits after using ${tokenSymbol} as flashloan token: ${estimatedProfits}`);
+
+          if (estimatedProfits < 0) { // We need to factor gas prices
+            this.debug(`Unusable: ${tokenSymbol}`);
+            continue;
+          }
+
+          const info = {
+            symbol: tokenSymbol,
+            ratios: {
+              firstRatio: firstStepResult,
+              secondRatio: secondStepResult,
+            },
+          };
+
+          if (this.executeCacheItems[i].flashLoanTokens == null) {
+            this.executeCacheItems[i].flashLoanTokens = [info];
+          } else {
+            this.executeCacheItems[i].flashLoanTokens.push(info);
+          }
+          i++;
+        }
+      }
+      if (this.executeCacheItems[i].flashLoanTokens == null) {
+        this.executeCacheItems.splice(i, 1);
+      }
+    }
+    if (this.executeCacheItems.length == 0) {
+      this.debug(`Sad, no profitable combo's found`);
+      return;
+    }
+    // eslint-disable-next-line max-len
+    this.debug(`Found some very good profits: ${JSON.stringify(this.executeCacheItems, null, 2)}`);
+    this.parent.executer.executeCache = this.executeCacheItems;
+  }
+
+  /**
+   * Checks the conversion from token1 on exchange to token2 on the same
+   * exchange. If the pair yeilds a loss we don't want it (will update later to
+   * allow minor incursion of loss)
+   *
+   * @param {String} token1
+   *    The token to turn into token2
+   * @param {String} token2
+   *    The destination token
+   * @param {String} exchange
+   *    The exchange to check the ratio of
+   *
+   * @return {Number|null} difference in the ratio in USD
+   * @memberof Observer
+   */
+  async hasOptimalPairReserves(token1, token2, exchange) {
+    // TODO: Check that these exist
+    const _exchange = await this.getExchangesFromNames([exchange])[0];
+    // eslint-disable-next-line max-len
+    const reservesAddress = await _exchange.getTokenPairAddress(token1, token2);
+    if (!reservesAddress) {
+      return null;
+    }
+    // eslint-disable-next-line max-len
+    const reserves = await _exchange.getTokenPairReserves(reservesAddress.pairAddress);
+    if (!reserves) {
+      return null;
+    }
+    const ratio = await _exchange.getRatio(token1, token2, reserves);
+    this.debug(`Received ratio: ${ratio}`);
+    return ratio;
   }
 
   /**
@@ -191,7 +323,7 @@ class Observer extends Logger {
    * @return {Array<BaseExchange?>}
    * @memberof Observer
    */
-  getExchangeFromNames(names) {
+  getExchangesFromNames(names) {
     const ret = [];
     names = names.sort(); // More efficient hopefully
     const exchanges = this.exchanges;

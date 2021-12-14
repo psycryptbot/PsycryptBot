@@ -191,7 +191,7 @@ class MoralisInterface extends REST {
       const ret = await Moralis.Web3API.defi.getPairAddress({
         token0_address: token1,
         token1_address: token2,
-        exchange: exchange,
+        exchange: exchange.replace('-', ''),
         chain: chain,
       }).catch((reason) => {
         this._handleMessage(reason);
@@ -219,7 +219,7 @@ class MoralisInterface extends REST {
     return await this.rateLimitedExecution(1, async () => {
       this.debug(`Getting pair reserves of ${pairAddress} from the ${chain} chain`);
       const ret = await Moralis.Web3API.defi.getPairReserves({
-        address: pairAddress,
+        pair_address: pairAddress,
         chain: chain,
       }).catch((reason) => {
         this._handleMessage(reason);
@@ -241,7 +241,7 @@ class MoralisInterface extends REST {
    */
   _handleMessage(reason) {
     if (reason != undefined && reason.error != undefined) {
-      this.error(`Hit moralis response error: "${reason.error}"`);
+      this.warn(`Hit moralis response error: "${reason.error}"`);
     }
   }
 }

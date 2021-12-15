@@ -7,7 +7,7 @@
 // -------------------------------------
 // All rights reserved.
 //
-
+require('dotenv').config();
 const path = require('path');
 const semver = require('semver');
 const {exit} = process; // This is funny ;p

@@ -9,6 +9,8 @@
 //
 
 const Logger = require('../Logger');
+const Executer = require('./Executor');
+const Observer = require('./Observer');
 
 /**
  * This class manages the arbirage section.
@@ -21,12 +23,28 @@ const Logger = require('../Logger');
 class Arbitrage extends Logger {
   /**
    * Creates an instance of Arbitrage.
+   *
    * @memberof Arbitrage
    */
   constructor() {
     super('Arbitrage');
+    this.executer = new Executer();
+    this.observer = new Observer();
+    this.executionCycle = 0;
+    this.adoptSubProcesses([this.executer, this.observer]);
+    this.endConstruction();
+  }
 
-    this.log(`Started up Arbitrage module`);
+  /**
+   * Executes an arbitrage cycle. This includes both monitoring and
+   * executing the trasnactions on the exchange.
+   *
+   * @memberof Arbitrage
+   */
+  async executeArbitrageCycle() {
+    this.executionCycle += 1;
+    await this.observer.executeObservationCycle();
+    // TODO: Write the Executor cycle
   }
 }
 

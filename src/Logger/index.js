@@ -14,14 +14,14 @@
 // NOTE: Possibly move away from console.warn and console.error
 
 const LoggerColorUtil = require('./color');
-
+const EventEmitter = require('events');
 /**
  * Main logger class for entire bot.
  * Classes can extend from this
  *
  * @class Logger
  */
-class Logger {
+class Logger extends EventEmitter {
   /**
    * Creates an instance of Logger
    *
@@ -30,10 +30,11 @@ class Logger {
    * @memberof Logger
    */
   constructor(name, useColor = true) {
-    this.name = name;
+    super();
+    this._bootTime = process.hrtime.bigint();
+    this._name = name;
     this.children = [];
     this.parent = null;
-
     // TODO: find a way to make this easier to use
     this.colorUtil = new LoggerColorUtil();
     if (!useColor) {
@@ -42,7 +43,30 @@ class Logger {
   }
 
   /**
-   * Normal Logging
+   * The name associated with the logger
+   *
+   * @readonly
+   * @memberof Logger
+   */
+  get name() {
+    if (this.parent != undefined) {
+      return `${this.parent.name}: ${this._name}`;
+    }
+    return this._name;
+  }
+
+  /**
+   * Ends the logger construction process (and prints boot time)
+   *
+   * @memberof Logger
+   */
+  endConstruction() {
+    const difference = Number(process.hrtime.bigint() - this._bootTime)*1.0;
+    this.debug(`Started up ${this.name} +${difference/1000000}ms`);
+  }
+
+  /**
+   * Normal logging
    *
    * @param {String} message
    * @memberof Logger
@@ -87,19 +111,6 @@ class Logger {
   }
 
   /**
-   * Creates a logger that operates as a subprocess of the current instance
-   *
-   * @param {String} subName
-   * @memberof Logger
-   * @return {Logger}
-   */
-  createSubProcess(subName) {
-    const sub = new Logger(subName);
-    sub.attachToNewParent(this);
-    return sub;
-  }
-
-  /**
    * Takes the current logger and associates it with a parent
    *
    * @param {Logger} parent
@@ -108,9 +119,23 @@ class Logger {
    */
   becomeSubProcess(parent) {
     this.parent = parent;
-    const oldName = this.name.split(' ');
-    this.name = `${parent.name} > ${oldName[oldName.length-1]}`;
+  }
+
+  /**
+   * Takes a group of objects extending logger and
+   * makes them sub-processes
+   *
+   * @param {Array<Logger>} processes
+   * @memberof Logger
+   */
+  adoptSubProcesses(processes) {
+    for (const process_ of processes) {
+      if (process_ == undefined) {
+        this.error(`Please don't pass undefined parameters`);
+        continue;
+      }
+      process_.becomeSubProcess(this);
+    }
   }
 }
-
 module.exports = Logger;
